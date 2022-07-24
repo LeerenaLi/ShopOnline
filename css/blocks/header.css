@@ -52,7 +52,6 @@
     }
     .header__wrapper {
         grid-template-columns: 2fr 4fr 3fr;
-        /* grid-template-columns: 165px 314px 221px; */
         row-gap: 29px;
     }
     .header__logo {

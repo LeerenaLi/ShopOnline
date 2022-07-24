@@ -8,5 +8,4 @@
 @import "blocks/navigation.css";
 @import "blocks/search.css";
 @import "blocks/icons.css";
-
-@import "";
+@import "blocks/banner.css";
