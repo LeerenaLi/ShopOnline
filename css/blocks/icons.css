@@ -1,0 +1,114 @@
+.icons {
+    width: 354px;
+    height: 61px;
+}
+
+.icons__list {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+}
+
+.icons__link {
+    min-height: 61px;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    align-content: space-between;
+}
+
+.icons__link:hover .icons__img svg {
+    fill: #3670C7;
+}
+
+.icons__link:hover .icons__text {
+    color: #3670C7;
+}
+
+.icons__img {
+    justify-self: center;
+    width: 36px;
+    height: 36px;
+    position: relative;
+}
+
+.icons__img_count::before {
+    content: "2";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14px;
+    height: 14px;
+    background: #FFFFFF;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: #3670C7;
+    text-align: center;
+}
+
+.icons__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    color: #2D2D2D;
+    justify-self: center;
+}
+
+@media (max-width: 1600px) {
+    .icons {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        justify-self: end;
+        width: 294px;
+    }
+    .icons__text {
+        line-height: 100%;
+    }
+    .icons__img_count::before {
+        top: 2px;
+    }
+}
+
+@media (max-width: 992px) {
+    .icons {
+        width: 221px;
+        height: 44px;
+    } 
+    .icons__link {
+        min-height: 44px;
+    }
+    .icons__img {
+        width: 30px;
+        height: 30px;
+    }
+    .icons__text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 610px) {
+    .icons {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+}
+
+@media (max-width: 425px) {
+    .icons {
+        width: 130px;
+        height: 30px;
+    }
+    .icons__link {
+        min-height: 30px;
+    }
+    .icons__text {
+        display: none;
+    }
+    .icons__img_count::before {
+        top: 0;
+    }
+}

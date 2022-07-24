@@ -52,3 +52,21 @@ h1, h2, h3, p, figure, fieldset {
     padding: 0 30px;
     margin: 0 auto;
 }
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 42px;
+    }
+}
+
+@media (max-width: 1010px) {
+    .container {
+        padding: 0 34px;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        padding: 0 20px;
+    }
+}
