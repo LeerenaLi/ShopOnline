@@ -1,0 +1,885 @@
+.promo {
+    padding-bottom: 91px;
+}
+
+.promo__wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 245px);
+    grid-template-rows: repeat(4, 228px);
+    row-gap: 60px;
+    justify-content: space-between;
+}
+
+.promo__book {
+    background: url("../../img/book.jpg") no-repeat;
+    border-radius: 20px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding-top: 80px;
+    padding-left: 20px;
+}
+
+.promo__title {
+    font-size: 30px;
+    line-height: 130%;
+}
+
+.promo__title_book {
+    font-size: 40px;
+}
+
+.promo__sale {
+    background: url("../../img/time.jpg") no-repeat;
+    border-radius: 20px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding-top: 67px;
+    padding-left: 14px;
+    position: relative;
+}
+
+.promo__label {
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    background: #FFBD13;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo__label_bottom-right {
+    bottom: 20px;
+    right: 20px;
+}
+
+.promo__label_top-left {
+    top: 20px;
+    left: 20px;
+}
+
+.promo__second {
+    background: url("../../img/second_gift.jpg") no-repeat;
+    border-radius: 20px;
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
+    padding: 329px 20px 20px 20px;
+}
+
+.promo__sticker {
+    max-width: 510px;
+    height: 167px;
+    background: #38C0EB;
+    border-radius: 20px;
+    padding-top: 31px;
+    padding-left: 28px;
+}
+
+.promo__subtitle {
+    font-size: 40px;
+    line-height: 36px;
+}
+
+.promo__subtitle_big {
+    font-size: 56px;
+    line-height: 93px;
+}
+
+.promo__new-year {
+    background: url("../../img/new_year.jpg") no-repeat;
+    border-radius: 20px;
+    grid-column: 5 / 7;
+    grid-row: 1 / 2;
+    padding-top: 94px;
+    padding-left: 30px;
+}
+
+.promo__text {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.promo__shoe {
+    background: url("../../img/running_shoe.jpg") no-repeat;
+    border-radius: 20px;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    position: relative;
+}
+
+.promo__december {
+    background: url("../../img/december.jpg") no-repeat;
+    border-radius: 20px;
+    grid-column: 5 / 7;
+    grid-row: 2 / 3;
+    position: relative;
+    padding-top: 136px;
+    padding-left: 30px;
+}
+
+.promo__decoration {
+    background: url("../../img/decoration.jpg") no-repeat;
+    border-radius: 20px;
+    grid-column: 1 / 5;
+    grid-row: 3 / 5;
+    padding-top: 358px;
+    padding-left: 50px;
+}
+
+.promo__bg {
+    width: 643px;
+    height: 108px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo__h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #F91155;
+}
+
+.promo__dress {
+    background: url("../../img/dress.jpg") no-repeat;
+    border-radius: 20px;
+    grid-column: 5 / 6;
+    grid-row: 3 / 5;
+    position: relative;
+}
+
+.promo__chemicals {
+    background: url("../../img/chemicals.jpg") no-repeat;
+    border-radius: 20px;
+    grid-column: 6 / 7;
+    grid-row: 3 / 4;
+    position: relative;
+    padding-top: 130px;
+    padding-left: 20px;
+}
+
+.promo__balls {
+    background: url("../../img/balls.jpg") no-repeat;
+    border-radius: 20px;
+    grid-column: 6 / 7;
+    grid-row: 4 / 5;
+}
+
+@media (max-width: 1600px) {
+    .promo__wrapper {
+        grid-template-columns: repeat(6, 217px);
+        grid-template-rows: repeat(4, 202px);
+        row-gap: 40px;
+    }
+    .promo__title {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    .promo__sale {
+        padding-top: 40px;
+    }
+    .promo__second {
+        padding: 268px 20px 20px 20px;
+    }
+    .promo__sticker {
+        height: 155px;
+    }
+    .promo__subtitle {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .promo__subtitle_big {
+        font-size: 50px;
+        line-height: 74px;
+    }
+    .promo__new-year {
+        padding-top: 80px;
+    }
+    .promo__text {
+        font-size: 34px;
+        line-height: 46px;
+    }
+    .promo__december {
+        padding-top: 110px;
+    }
+    .promo__decoration {
+        padding-top: 290px;
+    }
+}
+
+@media (max-width: 1420px) {
+    .promo__wrapper {
+        grid-template-columns: repeat(6, 174px);
+        grid-template-rows: repeat(4, 162px);
+        row-gap: 40px;
+    }
+    .promo__book {
+        padding-top: 45px;
+    }
+    .promo__sale {
+        padding-top: 10px;
+    }
+    .promo__second {
+        padding: 210px 20px 20px 20px;
+    }
+    .promo__sticker {
+        height: 140px;
+    }
+    .promo__subtitle {
+        font-size: 30px;
+        line-height: 32px;
+    }
+    .promo__subtitle_big {
+        font-size: 46px;
+        line-height: 50px;
+    }
+    .promo__new-year {
+        padding-top: 50px;
+    }
+    .promo__december {
+        padding-top: 16px;
+    }
+    .promo__decoration {
+        padding-top: 210px;
+    }
+    .promo__chemicals {
+        padding-top: 110px;
+    }   
+}
+
+@media (max-width: 1200px) {
+    .promo__wrapper {
+        grid-template-columns: repeat(4, 217px);
+        grid-template-rows: repeat(6, 202px);
+        /* grid-template-columns: 217px 217px 206px 210px;
+        grid-template-rows: 202px 194px 194px 226px 198px 198px; */
+        row-gap: 22px;
+    }
+    .promo__new-year {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+    .promo__decoration {
+        grid-column: 1 / 5;
+        grid-row: 5 / 7;
+    }
+    .promo__december {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+        margin-bottom: 32px;
+    }
+    .promo__dress {
+        grid-column: 3 / 4;
+        grid-row: 3 / 5;
+        margin-bottom: 32px;
+    }
+    .promo__chemicals {
+        grid-column: 4 / 5;
+        grid-row: 3 / 4;
+    }
+    .promo__balls {
+        grid-column: 4 / 5;
+        grid-row: 4 / 5;
+        margin-bottom: 32px;
+    }
+    .promo__book {
+        padding-top: 101px;
+    }
+    .promo__title_book {
+        font-size: 30px;
+        line-height: 39px;
+    }
+    .promo__sale {
+        padding-top: 54px;
+    }
+    .promo__second {
+        padding: 255px 20px 20px 20px;
+    }
+    .promo__sticker {
+        max-width: 406px;
+        height: 134px;
+    }
+    .promo__subtitle {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .promo__subtitle_big {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .promo__new-year {
+        padding-top: 89px;
+        padding-left: 30px;
+    }
+    .promo__text {
+        font-size: 30px;
+        line-height: 39px;
+    }
+    .promo__december {
+        padding-top: 119px;
+        padding-left: 30px;
+    }
+    .promo__title_chemicals {
+        font-size: 20px;
+        line-height: 130%;
+    }
+    .promo__chemicals {
+        padding-top: 151px;
+    }
+    .promo__decoration {
+        padding-top: 296px;
+    }
+    .promo__bg {
+        width: 513px;
+        height: 83px;
+    }
+    .promo__h2 {
+        font-size: 30px;
+        line-height: 120%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .promo__wrapper {
+        /* column-gap: 30px; */
+    }
+    .promo__book {
+        background: url("../../img/book_1024.jpg") no-repeat;
+        background-size: cover;
+    }
+    .promo__sale {
+        background: url("../../img/time_1024.jpg") no-repeat;
+        background-size: cover;
+    }
+    .promo__second {
+        background: url("../../img/second_gift_1024.jpg") no-repeat;
+        background-size: cover;
+    }
+    .promo__new-year {
+        background: url("../../img/new_year_1024.jpg") no-repeat;
+        background-size: cover;
+    }
+    .promo__shoe {
+        background: url("../../img/running_shoe_1024.jpg") no-repeat;
+        background-size: cover;
+    }
+    .promo__december {
+        background: url("../../img/december_1024.jpg") no-repeat;
+        background-size: cover;
+    }
+    .promo__decoration {
+        background: url("../../img/decoration_1024.jpg") no-repeat;
+        background-size: cover;
+        padding-left: 30px;
+    }
+    .promo__dress {
+        background: url("../../img/dress_1024.jpg") no-repeat;
+        background-size: cover;
+    }
+    .promo__chemicals {
+        background: url("../../img/chemicals_1024.jpg") no-repeat;
+        background-size: cover;
+        padding-left: 11px;
+    }
+    .promo__balls {
+        background: url("../../img/balls_1024.jpg") no-repeat;
+        background-size: cover;
+    }
+    .promo__label_bottom-right {
+        bottom: 10px;
+        right: 10px;
+    }
+    .promo__label_top-left {
+        top: 10px;
+        left: 10px;
+    }
+}
+
+@media (max-width: 960px) {
+    .promo__wrapper {
+        grid-template-columns: repeat(4, 195px);
+        grid-template-rows: repeat(6, 182px);
+        /* grid-template-columns: 140px 140px 182px 178px;
+        grid-template-rows: 130px 126px 126px 126px 158px 158px; */
+        row-gap: 22px;
+    }
+    .promo__book {
+        padding-top: 43px;
+    }
+    .promo__title_book {
+        font-size: 26px;
+        line-height: 110%;
+    }
+    .promo__title {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .promo__sale {
+        padding-top: 17px;
+        padding-left: 15px;
+    }
+    .promo__title_sale {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+    }
+    .promo__label {
+        width: 50px;
+        height: 50px;
+    }
+    .promo__title_label {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+    }
+    .promo__second {
+        padding: 207px 10px 10px 10px;
+    }
+    .promo__sticker {
+        max-width: 360px;
+        height: 61px;
+        padding-top: 0;
+        padding-left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .promo__subtitle {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .promo__subtitle_big {
+        font-size: 26px;
+        line-height: 29px;
+    }
+    .promo__new-year {
+        padding-top: 72px;
+        padding-left: 21px;
+    }
+    .promo__text {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+    }
+    .promo__december {
+        padding-top: 89px;
+        padding-left: 21px;
+        margin-bottom: 0;
+    }
+    .promo__dress {
+        margin-bottom: 0;
+    }
+    .promo__chemicals {
+        padding-top: 94px;
+        padding-left: 15px;
+    }
+    .promo__title_chemicals {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+    }
+    .promo__balls {
+        margin-bottom: 0;
+    }
+    .promo__decoration {
+        padding-top: 243px;
+        padding-left: 26px;
+    }
+    .promo__bg {
+        border-radius: 12px;
+        width: 347px;
+        height: 68px;
+    }
+    .promo__h2 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 120%;
+    }
+}
+
+@media (max-width: 880px) {
+    .promo__wrapper {
+        /* grid-template-columns: repeat(4, 195px);
+        grid-template-rows: repeat(6, 182px); */
+        grid-template-columns: 140px 140px 182px 178px;
+        grid-template-rows: 130px 126px 126px 126px 158px 158px;
+        row-gap: 22px;
+    }
+    .promo__book {
+        background: url("../../img/book_768.jpg") no-repeat;
+        background-size: cover;
+        border-radius: 12px;
+        padding-top: 45px;
+        padding-left: 10px;
+    }
+    .promo__sale {
+        background: url("../../img/time_768.jpg") no-repeat;
+        background-size: cover;
+        border-radius: 12px;
+    }
+    .promo__second {
+        background: url("../../img/second_gift_768.jpg") no-repeat;
+        background-size: cover;
+        border-radius: 12px;
+    }
+    .promo__new-year {
+        background: url("../../img/new_year_768.jpg") no-repeat;
+        background-size: cover;
+        border-radius: 12px;
+    }
+    .promo__shoe {
+        background: url("../../img/running_shoe_768.jpg") no-repeat;
+        background-size: cover;
+        border-radius: 12px;
+    }
+    .promo__december {
+        background: url("../../img/december_768.jpg") no-repeat;
+        background-size: cover;
+        border-radius: 12px;
+    }
+    .promo__decoration {
+        background: url("../../img/decoration_768.jpg") no-repeat;
+        background-size: cover;
+        border-radius: 12px;
+        padding-left: 27px;
+    }
+    .promo__dress {
+        background: url("../../img/dress_768.jpg") no-repeat;
+        background-size: cover;
+        border-radius: 12px;
+    }
+    .promo__chemicals {
+        background: url("../../img/chemicals_768.jpg") no-repeat;
+        background-size: cover;
+        border-radius: 12px;
+        padding-left: 11px;
+    }
+    .promo__balls {
+        background: url("../../img/balls_768.jpg") no-repeat;
+        background-size: cover;
+        border-radius: 12px;
+    }
+    .promo__title_book {
+        font-size: 26px;
+        line-height: 110%;
+    }
+    .promo__sticker {
+        justify-content: start;
+        padding-left: 26px;
+    }
+    .promo__subtitle {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 720px) {
+    .promo {
+        padding-bottom: 43px;
+    }
+    .promo__wrapper {
+        grid-template-columns: repeat(4, 140px);
+        grid-template-rows: repeat(6, 130px);
+        /* grid-template-columns: 140px 140px 182px 178px;
+        grid-template-rows: 130px 126px 126px 126px 158px 158px; */
+        row-gap: 22px;
+    }
+    .promo__sticker {
+        display: block;
+        padding-top: 10px;
+    }
+    .promo__chemicals {
+        padding-top: 80px;
+    }
+    .promo__decoration {
+        padding-top: 190px;
+    }
+}
+
+@media (max-width: 640px) {
+    .promo__wrapper {
+        grid-template-columns: repeat(4, 112px);
+        grid-template-rows: repeat(6, 104px);
+        row-gap: 22px;
+    }
+    .promo__book {
+        padding-top: 20px;
+    }
+    .promo__sale {
+        padding-top: 11px;
+        padding-left: 8px;
+    }
+    .promo__second {
+        padding: 158px 10px 10px 10px;
+    }
+    .promo__new-year {
+        padding-top: 58px;
+        padding-left: 12px;
+    }
+    .promo__december {
+        padding-top: 57px;
+        padding-left: 12px;
+    }
+    .promo__chemicals {
+        padding-top: 63px;
+    }
+    .promo__decoration {
+        padding-top: 140px;
+    }
+}
+
+@media (max-width: 530px) {
+    .promo__wrapper {
+        grid-template-columns: repeat(2, 195px);
+        grid-template-rows: repeat(10, 182px);
+        row-gap: 22px;
+    }
+    .promo__book {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .promo__sale {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    .promo__shoe {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+    .promo__second {
+        grid-column: 1 / 3;
+        grid-row: 3 / 5;
+    }
+    .promo__new-year {
+        grid-column: 1 / 3;
+        grid-row: 5 / 6;
+    }
+    .promo__december {
+        grid-column: 1 / 3;
+        grid-row: 6 / 7;
+    }
+    .promo__dress {
+        grid-column: 1 / 2;
+        grid-row: 7 / 9;
+    }
+    .promo__chemicals {
+        grid-column: 2 / 3;
+        grid-row: 7 / 8;
+    }
+    .promo__balls {
+        grid-column: 2 / 3;
+        grid-row: 8 / 9;
+    }
+    .promo__decoration {
+        grid-column: 1 / 3;
+        grid-row: 9 / 11;
+    }
+    .promo__book {
+        background: url("../../img/book_1024.jpg") no-repeat;
+        background-size: cover;
+    }
+    .promo__sale {
+        background: url("../../img/time_1024.jpg") no-repeat;
+        background-size: cover;
+    }
+    .promo__second {
+        background: url("../../img/second_gift_1024.jpg") no-repeat;
+        background-size: cover;
+    }
+    .promo__new-year {
+        background: url("../../img/new_year_1024.jpg") no-repeat;
+        background-size: cover;
+    }
+    .promo__shoe {
+        background: url("../../img/running_shoe_1024.jpg") no-repeat;
+        background-size: cover;
+    }
+    .promo__december {
+        background: url("../../img/december_1024.jpg") no-repeat;
+        background-size: cover;
+    }
+    .promo__decoration {
+        background: url("../../img/decoration_1024.jpg") no-repeat;
+        background-size: cover;
+    }
+    .promo__dress {
+        background: url("../../img/dress_1024.jpg") no-repeat;
+        background-size: cover;
+    }
+    .promo__chemicals {
+        background: url("../../img/chemicals_1024.jpg") no-repeat;
+        background-size: cover;
+    }
+    .promo__balls {
+        background: url("../../img/balls_1024.jpg") no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 464px) {
+    .promo__wrapper {
+        grid-template-columns: repeat(2, 140px);
+        grid-template-rows: repeat(10, 130px);
+    }
+    .promo__bg {
+        width: 280px;
+        height: 60px;
+    }
+    .promo__h2 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .promo__wrapper {
+        grid-template-columns: repeat(2, 130px);
+        grid-template-rows: 120px 118px 93px 93px 118px 116px 87px 87px 123px;
+        row-gap: 20px;
+    }
+    .promo__decoration {
+        grid-column: 1 / 3;
+        grid-row: 9 / 10;
+    }
+    .promo__book {
+        background: url("../../img/book_320.jpg") no-repeat;
+        background-size: cover;
+        border-radius: 8px;
+    }
+    .promo__sale {
+        background: url("../../img/time_320.jpg") no-repeat;
+        background-size: cover;
+        border-radius: 8px;
+    }
+    .promo__second {
+        background: url("../../img/second_gift_320.jpg") no-repeat;
+        background-size: cover;
+        border-radius: 8px;
+    }
+    .promo__new-year {
+        background: url("../../img/new_year_320.jpg") no-repeat;
+        background-size: cover;
+        border-radius: 8px;
+    }
+    .promo__shoe {
+        background: url("../../img/running_shoe_320.jpg") no-repeat;
+        background-size: cover;
+        border-radius: 8px;
+    }
+    .promo__december {
+        background: url("../../img/december_320.jpg") no-repeat;
+        background-size: cover;
+        border-radius: 8px;
+    }
+    .promo__decoration {
+        background: url("../../img/decoration_320.jpg") no-repeat;
+        background-size: cover;
+        border-radius: 8px;
+    }
+    .promo__dress {
+        background: url("../../img/dress_320.jpg") no-repeat;
+        background-size: cover;
+        border-radius: 8px;
+    }
+    .promo__chemicals {
+        background: url("../../img/chemicals_320.jpg") no-repeat;
+        background-size: cover;
+        border-radius: 8px;
+    }
+    .promo__balls {
+        background: url("../../img/balls_320.jpg") no-repeat;
+        background-size: cover;
+        border-radius: 8px;
+    }
+    .promo__book {
+        padding-top: 67px;
+        padding-left: 10px;
+        padding-right: 55px;
+    }
+    .promo__title {
+        font-size: 12px;
+        line-height: 13px;
+    }
+    .promo__title_book {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .promo__title_label {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+    }
+    .promo__sale {
+        padding-top: 21px;
+        padding-left: 10px;
+    }
+    .promo__second {
+        padding: 160px 10px 10px 10px;
+    }
+    .promo__sticker {
+        width: 260px;
+        height: 36px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .promo__subtitle {
+        font-size: 12px;
+        line-height: 13px;
+    }
+    .promo__subtitle_big {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .promo__new-year {
+        padding-top: 88px;
+        padding-left: 10px;
+    }
+    .promo__text {
+        font-size: 12px;
+        line-height: 14px;
+        display: inline-block;
+    }
+    .promo__december {
+        padding-top: 88px;
+        padding-left: 10px;
+    }
+    .promo__chemicals {
+        padding-top: 70px;
+        padding-left: 9px;
+        height: 95px;
+    }
+    .promo__decoration {
+        padding-top: 83px;
+        padding-left: 15px;
+    }
+    .promo__bg {
+        width: 250px;
+        height: 30px;
+        border-radius: 6px;
+    }
+    .promo__h2 {
+        font-size: 12px;
+        line-height: 120%;
+    }
+    .promo__label_bottom-right {
+        bottom: 5px;
+        right: 5px;
+    }
+    .promo__label_top-left {
+        top: 5px;
+        left: 5px;
+    }
+    .promo__label_bottom-right-dress {
+        bottom: 9px;
+        right: 10px;
+    }
+}
+
