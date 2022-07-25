@@ -346,9 +346,6 @@
 }
 
 @media (max-width: 1024px) {
-    .promo__wrapper {
-        /* column-gap: 30px; */
-    }
     .promo__book {
         background: url("../../img/book_1024.jpg") no-repeat;
         background-size: cover;
