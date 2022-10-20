@@ -15,10 +15,33 @@
     font-size: 70px;
     line-height: 130%;
     padding-left: 112px;
-    margin-bottom: 96px;
+    margin-bottom: 20px;
 }
 
-.banner__action {
+.delete {
+    opacity: 0;
+}
+
+.end-action {
+    text-align: center;
+}
+
+.banner__timer {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.red {
+    background-color: red;
+    opacity: 70%;
+    padding: 10px;
+}
+
+.timer__title {
+    width: 100%;
     font-weight: 700;
     font-size: 16px;
     line-height: 130%;
@@ -26,26 +49,19 @@
     margin-bottom: 21px;
 }
 
-.banner__timer {
-    width: 473px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.banner__item {
+.timer__item {
     display: flex;
     gap: 7px;
     align-items: flex-end;
 }
 
-.banner__time {
+.timer__count {
     font-weight: 700;
     font-size: 60px;
     line-height: 84%;
 }
 
-.banner__descr {
+.timer__units {
     font-weight: 700;
     font-size: 32px;
     line-height: 130%;
@@ -67,17 +83,17 @@
         padding-left: 80px;
         margin-bottom: 62px;
     }
-    .banner__action {
+    .timer__title {
         margin-bottom: 23px;
     }
     .banner__timer {
         width: 314px;
     }
-    .banner__time {
+    .timer__count {
         line-height: 78%;
         font-size: 40px;
     }
-    .banner__descr {
+    .timer__units {
         font-size: 20px;
         line-height: 110%;
     }
@@ -98,21 +114,21 @@
         font-size: 30px;
         margin-bottom: 81px;
     }
-    .banner__action {
+    .timer__title {
         font-size: 12px;
         margin-bottom: 18px;
     }
-    .banner__item {
+    .timer__item {
         gap: 3px;
     }
     .banner__timer {
-        width: 229px;
+        width: 244px;
     }
-    .banner__time {
+    .timer__count {
         line-height: 85%;
         font-size: 30px;
     }
-    .banner__descr {
+    .timer__units {
         font-size: 16px;
         line-height: 110%;
     }
@@ -143,18 +159,18 @@
         margin-bottom: 188px;
         padding-left: 29px;
     }
-    .banner__action {
+    .timer__title {
         font-size: 8px;
         margin-bottom: 11px;
     }
     .banner__timer {
-        width: 167px;
+        width: 180px;
     }
-    .banner__time {
+    .timer__count {
         line-height: 98%;
         font-size: 20px;
     }
-    .banner__descr {
+    .timer__units {
         font-size: 12px;
         line-height: 162%;
     }

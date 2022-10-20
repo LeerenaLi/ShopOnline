@@ -7,6 +7,14 @@
 
     <link rel="stylesheet" href="css/style.css">
     <title>Shop Online</title>
+
+    <script defer src="js/timer.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            timerInit('#timer');
+        });
+    </script>
 </head>
 <body>
     <header class="header">
@@ -69,21 +77,14 @@
             <div class="container">
                 <div class="banner__wrapper">
                     <h1 class="banner__title">-50% на все ноутбуки</h1>
-                    <p class="banner__action">До конца акции:</p>
-                    <div class="banner__timer">
-                        <div class="banner__item">
-                            <p class="banner__time">3</p>
-                            <p class="banner__descr">дня</p>
-                        </div>
-                        <div class="banner__item">
-                            <p class="banner__time">8</p>
-                            <p class="banner__descr">часов</p>
-                        </div>
-                        <div class="banner__item">
-                            <p class="banner__time">43</p>
-                            <p class="banner__descr">минуты</p>
-                        </div>
+                    
+                    <div class="end-action delete">
+                        <p class="timer__units">Акция закончилась</p>
                     </div>
+                    <div class="banner__timer timer" id="timer" data-timer-deadline="2022/10/29 00:00">
+                        
+                    </div>
+
                 </div>
             </div>
         </section>
