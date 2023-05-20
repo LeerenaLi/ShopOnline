@@ -66,6 +66,7 @@ const renderPagination = (page, pages, count) => {
 
     const isNotStart = page - Math.floor(count / 2) > 1;
     const isEnd = page + Math.floor(count / 2) >= pages;
+    console.log('page: ', page);
 
     if (count > pages) {
         count = pages;
@@ -244,6 +245,7 @@ const renderPages = async () => {
     const searchParams = new URL(document.location).searchParams;
 
     page = searchParams.get('page');
+    page = Number(page);
 
     const data = await getData(`${API_URL}?page=${page}`);
     const pages = data.meta.pagination.pages;
