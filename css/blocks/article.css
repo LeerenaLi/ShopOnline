@@ -1,0 +1,145 @@
+.article {
+    padding: 148px 0 148px 0;
+}
+
+.article__container {
+    max-width: 1830px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.bread {
+    margin-bottom: 80px;
+}
+
+.bread__link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    color: #525252;
+    margin-right: 10px;
+}
+
+.bread__link:hover {
+    color: #3670C7;
+}
+
+.bread__img {
+    margin-right: 10px;
+}
+
+.article__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 130%;
+    color: #2D2D2D;
+    margin-bottom: 40px;
+}
+
+.article__body {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    color: #2D2D2D;
+    margin-bottom: 100px;
+}
+
+.article__wrapper {
+    display: grid;
+    grid-template-columns: 2fr 532px;
+    grid-column-gap: 143px;
+}
+
+.article__adevertisting {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.article__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+}
+
+.back__img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.back__link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    color: #2D2D2D;
+}
+
+.back__link:hover {
+    color: #3670C7;
+}
+
+.autor__name {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    color: #000000;
+    margin-bottom: 35px;
+}
+
+.autor__date, .autor__count {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    color: #8F8F8F;
+}
+
+.autor__date {
+    margin-bottom: 15px;
+}
+
+.autor__scan {
+    display: flex;
+    gap: 37px;
+}
+
+.autor__aye {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.autor__comments {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+.autor__info {
+    display: flex;
+    gap: 40px;
+}
+
+.autor__status {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #8F8F8F;
+    margin-bottom: 10px;
+}
+
+.autor__email {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    color: #4e4e4e;
+    margin-bottom: 10px;
+}
+
+.autor__email:hover {
+    color: #3670C7;
+}
