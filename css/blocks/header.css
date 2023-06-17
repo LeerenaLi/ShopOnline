@@ -1,16 +1,15 @@
 .header {
     padding-top: 27px;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     min-height: 61px;
 }
 
 .header__wrapper {
     display: grid;
     grid-template-columns: repeat(4, auto);
-    /* grid-template-rows: repeat(3, auto);
-    grid-auto-flow: row; */
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 .header__logo {
@@ -28,20 +27,59 @@
     color: #3670C7;
 }
 
+.header__btn {
+    display: flex;
+    justify-content: space-between;
+    width: 151px;
+    height: 54px;
+    padding: 10px 28px 12px 28px;
+    background-color: #3670C7;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+}
+
+.header__btn-open {
+    align-self: center;
+}
+
+.header__btn-close {
+    align-self: center;
+    display: none;
+}
+
+.header__btn_active>.header__btn-open {
+    transition: 0.5s ease-in-out;
+    display: none;
+}
+
+.header__btn_active>.header__btn-close {
+    transition: 0.5s ease-in-out;
+    display: block;
+}
+
 @media (max-width: 1600px) {
     .header {
         padding-top: 34px;
-        padding-bottom: 10px;
         min-height: 149px;
     }
     .header__wrapper {
         grid-template-columns: 3fr 5fr 3fr;
         grid-template-rows: repeat(2, auto);
         row-gap: 35px;
+        padding-bottom: 20px;
     }
     .header__logo {
         margin-right: 0;
         padding-top: 0;
+    }
+    .header__btn {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
     }
 }
 
@@ -60,6 +98,12 @@
         grid-column: 1 / 3;
         grid-row: 1 / 2;
     }
+    .header__btn {
+        width: 115px;
+        height: 42px;
+        font-size: 16px;
+        padding: 9px 21px 11px 21px;
+    }
 }
 
 @media (max-width: 610px) {
@@ -72,11 +116,24 @@
 @media (max-width: 425px) {
     .header {
         padding-top: 22px;
-        padding-bottom: 21px;
+    }
+    .header__wrapper {
+        padding-bottom: 20px;
     }
     .header__logo {
         font-size: 18px;
         line-height: 25px;
+    }
+    .header__btn {
+        width: 79px;
+        height: 30px;
+        font-size: 12px;
+        padding: 6px 14px 7px 14px;
+        border-radius: 4px;
+    }
+    .nheader__btn-open, .header__btn-close {
+        width: 14px;
+        height: 14px;
     }
 }
 

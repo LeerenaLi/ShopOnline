@@ -1,5 +1,5 @@
 .promo {
-    padding-bottom: 91px;
+    padding-bottom: 50px;
 }
 
 .promo__wrapper {
@@ -25,6 +25,8 @@
     font-size: 30px;
     line-height: 130%;
 }
+
+
 
 .promo__title_book {
     font-size: 40px;
@@ -191,6 +193,7 @@
         font-size: 24px;
         line-height: 120%;
     }
+    
     .promo__sticker {
         height: 155px;
     }
@@ -205,6 +208,10 @@
     .promo__text {
         font-size: 34px;
         line-height: 46px;
+    }
+    .promo__text_december {
+        font-size: 30px;
+        max-width: 230px;
     }
 }
 
@@ -231,6 +238,10 @@
     .promo__decoration {
         padding: 40px;
     } 
+    .promo__text_december {
+        font-size: 30px;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -537,7 +548,7 @@
 
 @media (max-width: 720px) {
     .promo {
-        padding-bottom: 43px;
+        padding-bottom: 20px;
     }
     .promo__wrapper {
         grid-template-columns: repeat(4, 140px);
