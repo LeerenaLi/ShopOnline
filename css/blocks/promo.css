@@ -388,6 +388,9 @@
 }
 
 @media (max-width: 960px) {
+    .promo {
+        padding-bottom: 20px;
+    }
     .promo__wrapper {
         grid-template-columns: repeat(4, 195px);
         grid-template-rows: repeat(6, 182px);
