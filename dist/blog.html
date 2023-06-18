@@ -4,23 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Blog</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <title>Shop Online</title>
-
-    <script defer src="js/timer.js"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            timerInit('#timer');
-        });
-    </script>
+    <script defer src="js/blog.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
-                <a href="#" class="header__logo" alt="Логотип компании ShopOnline">Shop<span class="header__logo header__logo_color">Online</span></a>
+                <a href="index.html" class="header__logo" alt="Логотип компании ShopOnline">Shop<span class="header__logo header__logo_color">Online</span></a>
                 <button class="header__btn">
                     <img src="icons/sort.svg" alt="" class="header__btn-open">
                     <img src="icons/clear.svg" alt="" class="header__btn-close">
@@ -106,208 +99,28 @@
         </div>
     </header>
 
-    <main class="main">
-        <section class="banner">
-            <div class="container">
-                <div class="banner__wrapper">
-                    <h1 class="banner__title">-50% на все ноутбуки</h1>
-                    
-                    <div class="end-action delete">
-                        <p class="timer__units">Акция закончилась</p>
-                    </div>
-                    <div class="banner__timer timer" id="timer" data-timer-deadline="2023/08/21 00:00">
-                        
-                    </div>
-
-                </div>
+    <section class="blog">
+        <div class="blog__container">
+            <div class="bread">
+                <a href="index.html" class="bread__link">Главная</a>
+                <img src="icons/blog/bread__right.svg" alt="arrow right" class="bread__img">
+                <a href="blog.html" class="bread__link">Блог</a>
             </div>
-        </section>
+            <ul class="blog__list">
+     
+            </ul>
 
-        <section class="promo">
-            <div class="container">
-                <ul class="promo__wrapper">
-                    <li class="promo__book">
-                        <p class="promo__title promo__title_book">
-                            Книга – 
-                        </p>
-                        <p class="promo__title">
-                            лучший подарок
-                        </p>
-                    </li>
-                    <li class="promo__sale">
-                        <p class="promo__title promo__title_sale">
-                            Время скидок!
-                        </p>
-                        <div class="promo__label promo__label_bottom-right">
-                            <p class="promo__title promo__title_label">
-                                -25%
-                            </p>
-                        </div>
-                    </li>
-                    <li class="promo__second">
-                        <div class="promo__sticker">
-                            <p class="promo__subtitle">
-                                Вторая пара кроссовок
-                            </p>
-                            <p class="promo__subtitle promo__subtitle_big">
-                                в подарок!
-                            </p>
-                        </div>
-                    </li>
-                    <li class="promo__new-year">
-                        <p class="promo__text">
-                            Идеи новогодних 
-                        </p>
-                        <p class="promo__text">
-                            подарков
-                        </p>
-                    </li>
-                    <li class="promo__shoe">
-                        <div class="promo__label promo__label_top-left">
-                            <p class="promo__title" aria-label="Скидка на кроссовки 40%"></p>
-                            <p class="promo__title promo__title_label">
-                                -40%
-                            </p>
-                        </div>
-                    </li>
-                    <li class="promo__december">
-                        <p class="promo__text promo__text_december">
-                            Выгодно в декабре!
-                        </p>
-                        <div class="promo__label promo__label_bottom-right">
-                            <p class="promo__title promo__title_label">
-                                -15%
-                            </p>
-                        </div>
-                    </li>
-                    <li class="promo__decoration">
-                        <div class="promo__bg">
-                            <h2 class="promo__h2">
-                                Новогодние украшения
-                            </h2>
-                        </div>
-                    </li>
-                    <li class="promo__dress">
-                        <div class="promo__label promo__label_bottom-right promo__label_bottom-right-dress">
-                            <p class="promo__title" aria-label="Скидка на платья 55%"></p>
-                            <p class="promo__title promo__title_label">
-                                -55%
-                            </p>
-                        </div>
-                    </li>
-                    <li class="promo__chemicals">
-                        <div class="promo__label promo__label_top-left">
-                            <p class="promo__title promo__title_label">
-                                -25%
-                            </p>
-                        </div>
-                        <p class="promo__title promo__title_chemicals">
-                            На бытовую химию
-                        </p>
-                    </li>
-                    <li class="promo__balls">
-                        <p class="promo__title" aria-label="Новогодние игрушки"></p>
-                    </li>
-                </ul>
+            <div class="pagination">
+                
             </div>
-        </section>
-
-        <section class="goods">
-            <div class="container">
-                <h2 class="goods__title">Это выгодно!</h2>
-
-                <ul class="goods__list">
-                    <li class="goods__item">
-                        <a href="#" class="goods__content">
-                            <img src="img/product01.jpg" alt="Карточка товара футболки" class="goods__img">
-                            <div class="goods__prices">
-                                <p class="goods__price">1299 ₽</p>
-                                <p class="goods__price-old">2598 ₽</p>
-                            </div>
-                            <p class="goods__description">Пара футболок</p>
-                        </a>
-                    </li>
-                    <li class="goods__item">
-                        <a href="#" class="goods__content">
-                            <img src="img/product02.jpg" alt="Карточка товара кроссовки" class="goods__img">
-                            <div class="goods__prices">
-                                <p class="goods__price">2099 ₽</p>
-                                <p class="goods__price-old">5938 ₽</p>
-                            </div>
-                            <p class="goods__description">Кроссовки</p>
-                        </a>
-                    </li>
-                    <li class="goods__item">
-                        <a href="#" class="goods__content">
-                            <img src="img/product03.jpg" alt="Карточка товара Постельное белье" class="goods__img">
-                            <div class="goods__prices">
-                                <p class="goods__price">3902 ₽</p>
-                                <p class="goods__price-old">4490 ₽</p>
-                            </div>
-                            <p class="goods__description">Постельное белье</p>
-                        </a>
-                    </li>
-                    <li class="goods__item">
-                        <a href="#" class="goods__content">
-                            <img src="img/product04.jpg" alt="Карточка товара Фен" class="goods__img">
-                            <div class="goods__prices">
-                                <p class="goods__price">2999 ₽</p>
-                                <p class="goods__price-old">6030 ₽</p>
-                            </div>
-                            <p class="goods__description">Фен</p>
-                        </a>
-                    </li>
-                    <li class="goods__item">
-                        <a href="#" class="goods__content">
-                            <img src="img/product05.jpg" alt="Карточка товара Постельное белье" class="goods__img">
-                            <div class="goods__prices">
-                                <p class="goods__price">3902 ₽</p>
-                                <p class="goods__price-old">4490 ₽</p>
-                            </div>
-                            <p class="goods__description">Постельное белье</p>
-                        </a>
-                    </li>
-                    <li class="goods__item">
-                        <a href="#" class="goods__content">
-                            <img src="img/product06.jpg" alt="Карточка товара Фен" class="goods__img">
-                            <div class="goods__prices">
-                                <p class="goods__price">2999 ₽</p>
-                                <p class="goods__price-old">6030 ₽</p>
-                            </div>
-                            <p class="goods__description">Фен</p>
-                        </a>
-                    </li>
-                    <li class="goods__item">
-                        <a href="#" class="goods__content">
-                            <img src="img/product07.jpg" alt="Карточка товара Варежки-мишки" class="goods__img">
-                            <div class="goods__prices">
-                                <p class="goods__price">540 ₽</p>
-                                <p class="goods__price-old">890 ₽</p>
-                            </div>
-                            <p class="goods__description">Варежки-мишки</p>
-                        </a>
-                    </li>
-                    <li class="goods__item">
-                        <a href="#" class="goods__content">
-                            <img src="img/product08.jpg" alt="Карточка товара Пара футболок" class="goods__img">
-                            <div class="goods__prices">
-                                <p class="goods__price">1299 ₽</p>
-                                <p class="goods__price-old">2598 ₽</p>
-                            </div>
-                            <p class="goods__description">Пара футболок</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
-                <a href="#" class="footer__logo" alt="Логотип компании ShopOnline">Shop<span class="footer__logo footer__logo_color">Online</span></a>
+                <a href="index.html" class="footer__logo" alt="Логотип компании ShopOnline">Shop<span class="footer__logo footer__logo_color">Online</span></a>
 
-            
                 <h3 class="footer__title footer__title_catalog">Каталог</h3>
 
                 <ul class="footer__list footer__list_catalog">
@@ -356,7 +169,7 @@
                         <a href="#" class="footer__link">Условия возврата заказа</a>
                     </li>
                     <li class="footer__item">
-                        <a href="#" class="footer__link">Блог</a>
+                        <a href="blog.html" class="footer__link">Блог</a>
                     </li>
                 </ul>
 
@@ -413,6 +226,5 @@
             </div>
         </div>
     </footer>
-    
 </body>
 </html>
