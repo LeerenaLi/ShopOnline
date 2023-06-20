@@ -1,0 +1,87 @@
+$color-dark: #2D2D2D;
+$color-white: #ffffff;
+$color-bg-input: #EFEFEF;
+$color-blue: #3670C7;
+$color-light-gray: #8F8F8F;
+$color-gray: #525252;
+$color-red: #F91155;
+$color-yellow: #FFBD13;
+
+$fonts: 'Lato', 'Arial',  sans-serif;
+
+$desktop: 1600px;
+$desktop-middle: 1420px;
+$desktop-min: 1200px;
+$laptop: 1024px;
+$tablet-max: 920px;
+$tablet-middle: 880px;
+$tablet: 768px;
+$tablet-min: 720px;
+$mobile-max: 640px;
+$mobile: 560px;
+$mobile-min: 440px;
+
+@mixin desktop {
+    @media (max-width: #{$desktop}) {
+        @content;
+    }
+}
+@mixin desktop-middle {
+    @media (max-width: #{$desktop-middle}) {
+        @content;
+    }
+}
+
+@mixin desktop-min {
+    @media (max-width: #{$desktop-min}) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (max-width: #{$laptop}) {
+        @content;
+    }
+}
+
+@mixin tablet-max {
+    @media (max-width: #{$tablet-max}) {
+        @content;
+    }
+}
+
+@mixin tablet-middle {
+    @media (max-width: #{$tablet-middle}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin tablet-min {
+    @media (max-width: #{$tablet-min}) {
+        @content;
+    }
+}
+
+@mixin mobile-max {
+    @media (max-width: #{$mobile-max}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+@mixin mobile-min {
+    @media (max-width: #{$mobile-min}) {
+        @content;
+    }
+}

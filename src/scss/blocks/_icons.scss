@@ -1,0 +1,94 @@
+.icons {
+    width: 354px;
+    height: 61px;
+    @include desktop {
+        grid-area: icons;
+        justify-self: end;
+        width: 294px;
+    }
+    @include laptop {
+        width: 221px;
+        height: 44px;
+    }
+    @include mobile {
+        width: 130px;
+        height: 30px;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-between;
+    }
+    &__link {
+        min-height: 61px;
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        align-content: space-between;
+        @include laptop {
+            min-height: 44px;
+        }
+        @include mobile {
+            min-height: 30px;
+        }
+    }
+    &__img {
+        justify-self: center;
+        width: 36px;
+        height: 36px;
+        position: relative;
+        @include laptop {
+            width: 30px;
+            height: 30px;
+        }
+        &_count {
+            &::before {
+                content: "2";
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 14px;
+                height: 14px;
+                background: $color-white;
+                border-radius: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 130%;
+                color: $color-blue;
+                text-align: center;
+                @include desktop {
+                    top: 2px;
+                }
+                @include mobile {
+                    top: 0;
+                }
+            }
+        }
+    }
+    &__text {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+        color: $color-dark;
+        justify-self: center;
+        @include desktop {
+            line-height: 1;
+        }
+        @include laptop {
+            font-size: 12px;
+        }
+        @include mobile {
+            display: none;
+        }
+    }
+}
+
+.icons__link:hover .icons__img svg {
+    fill: $color-blue;
+}
+
+.icons__link:hover .icons__text {
+    color: $color-blue;
+}

@@ -26,7 +26,7 @@ const createElement = (tag, attr, {append, appends, parent, cb} = {}) => {
     return element;
 };
 
-const API_URL = 'https://gorest.co.in/public-api/posts';
+const API_URL = 'https://gorest.co.in/public/v1/posts';
 const COUNT_PAGINATION = 3;
 const blogList = document.querySelector('.blog__list');
 const articleContainer = document.querySelector('.article__container');
@@ -130,6 +130,7 @@ const renderPagination = (page, pages, count) => {
 };
 
 const getAutor = async (userID) => {
+    console.log('userID: ', userID);
     const result = await fetch(`https://gorest.co.in/public-api/users/${userID}`);
 
     const response = await result.json();
@@ -140,6 +141,7 @@ const getAutor = async (userID) => {
 
 const createTemplate = async (article, id, autorId) => {
     const dataAutor = await getAutor(autorId);
+    console.log('dataAutor: ', dataAutor);
 
     const getRandom = (min, max) =>
         (Math.floor(Math.random() * (max - min)) + min);
@@ -256,6 +258,7 @@ const renderPages = async () => {
         dataPage.forEach(article => {
             const id = article.id;
             const autorId = article.user_id;
+            console.log('autorId: ', autorId);
             if (blogList) {
                 createTemplate(article, id, autorId);
             }
