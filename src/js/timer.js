@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 // const timerBlock = document.querySelector('.timer');
 // const endAction = document.querySelector('.end-action');

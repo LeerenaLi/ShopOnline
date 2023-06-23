@@ -7,7 +7,17 @@ $color-gray: #525252;
 $color-red: #F91155;
 $color-yellow: #FFBD13;
 
-$fonts: 'Lato', 'Arial',  sans-serif;
+// $fonts: 'Lato', sans-serif;
+
+// @mixin font($name, $weight) {
+//     font: {
+//         family: $name;
+//         weight: $weight;
+//         display: swap;
+//     }
+//     src: url("../fonts/#{ $name }.woff2") format("woff2"),
+//         url("../fonts/#{ $name }.woff") format("woff"),
+// }
 
 $desktop: 1600px;
 $desktop-middle: 1420px;

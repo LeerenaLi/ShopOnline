@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 const createElement = (tag, attr, {append, appends, parent, cb} = {}) => {
     const element = document.createElement(tag);

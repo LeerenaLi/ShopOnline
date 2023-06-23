@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/index.min.css">
     <title>Shop Online</title>
+    <!-- <link rel="preload" href="fonts/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Lato-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin> -->
 
-    <script defer src="js/timer.js"></script>
+    <!-- <link rel="stylesheet" href="css/index.min.css"> -->
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            const createLink = url => {
+                const link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = url;
+                document.head.append(link);
+            }
+            createLink('css/index.min.css');
             timerInit('#timer');
         });
     </script>
+
+    <script src="js/index.min.js" type="module"></script>
 </head>
 <body>
     <header class="header">
@@ -22,15 +32,15 @@
             <div class="header__wrapper">
                 <a href="#" class="header__logo" alt="Логотип компании ShopOnline">Shop<span class="header__logo header__logo_color">Online</span></a>
                 <button class="header__btn">
-                    <img src="icons/sort.svg" alt="" class="header__btn-open">
-                    <img src="icons/clear.svg" alt="" class="header__btn-close">
+                    <img src="icons/sort.svg" alt="btn open" class="header__btn-open" width="24" height="24">
+                    <img src="icons/clear.svg" alt="btn close" class="header__btn-close" width="24" height="24">
                     Меню
                 </button>
                 
                 <form action="#" class="search">
                     <input type="search" class="search__input" placeholder="Я ищу...">
                     <button class="search__button">
-                        <img src="icons/loupe.svg" alt="search img" class="search__img">
+                        <img src="icons/loupe.svg" alt="search img" class="search__img" width="27" height="27">
                     </button>
                 </form>
                 <div class="icons">
@@ -70,38 +80,68 @@
             </div>
 
             <nav class="navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Смартфоны</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Ноутбуки</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Ювелирные изделия</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Одежда</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Бытовая техника</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Бытовая химия</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Книги и журналы</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Домашний текстиль</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Электроника</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Косметика</a>
-                    </li>
-                </ul>
+                <div class="navigation__wrapper">
+
+                    <h3 class="navigation__title navigation__title_catalog">Каталог</h3>
+
+                    <ul class="navigation__list navigation__list_catalog">
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Смартфоны</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Ноутбуки</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Ювелирные изделия</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Одежда</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Бытовая техника</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Бытовая химия</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Книги и журналы</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Домашний текстиль</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Электроника</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Косметика</a>
+                        </li>
+                    </ul>
+
+                    <h3 class="navigation__title navigation__title_users">Покупателям</h3>
+
+                    <ul class="navigation__list navigation__list_users">
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Оплата заказа</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Условия доставки</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Условия возврата заказа</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Блог</a>
+                        </li>
+                    </ul>
+
+                    <h3 class="navigation__title navigation__title_contacts">Связаться с нами</h3>
+
+                    <ul class="navigation__list navigation__list_contacts">
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
@@ -223,8 +263,12 @@
                         </div>
                         <a href="#" class="goods__content">
                             <picture class="goods__image-wrapper">
+                                <source srcset="img/product01_1024.avif" media="(max-width: 1200px)" type="image/avif">
+                                <source srcset="img/product01_1024.webp" media="(max-width: 1200px)" type="image/webp">
                                 <source srcset="img/product01_1024.jpg" media="(max-width: 1200px)">
-                                <img src="img/product01.jpg" alt="Карточка товара футболки" class="goods__img">
+                                <source srcset="img/product01.avif" type="image/avif">
+                                <source srcset="img/product01.webp" type="image/webp">
+                                <img loading="lazy" src="img/product01.jpg" alt="Карточка товара футболки" class="goods__img" width="420" height="295">
                             </picture>
                             
                             <div class="goods__prices">
@@ -240,8 +284,12 @@
                         </div>
                         <a href="#" class="goods__content">
                             <picture class="goods__image-wrapper">
+                                <source srcset="img/product02_1024.avif" media="(max-width: 1200px)" type="image/avif">
+                                <source srcset="img/product02_1024.webp" media="(max-width: 1200px)" type="image/webp">
                                 <source srcset="img/product02_1024.jpg" media="(max-width: 1200px)">
-                                <img src="img/product02.jpg" alt="Карточка товара кроссовки" class="goods__img">
+                                <source srcset="img/product02.avif" type="image/avif">
+                                <source srcset="img/product02.webp" type="image/webp">
+                                <img loading="lazy" src="img/product02.jpg" alt="Карточка товара кроссовки" class="goods__img" width="420" height="295">
                             </picture>
                             <div class="goods__prices">
                                 <p class="goods__price">2099 ₽</p>
@@ -256,8 +304,12 @@
                         </div>
                         <a href="#" class="goods__content">
                             <picture class="goods__image-wrapper">
+                                <source srcset="img/product03_1024.avif" media="(max-width: 1200px)" type="image/avif">
+                                <source srcset="img/product03_1024.webp" media="(max-width: 1200px)" type="image/webp">
                                 <source srcset="img/product03_1024.jpg" media="(max-width: 1200px)">
-                                <img src="img/product03.jpg" alt="Карточка товара Постельное белье" class="goods__img">
+                                <source srcset="img/product03.avif" type="image/avif">
+                                <source srcset="img/product03.webp" type="image/webp">
+                                <img loading="lazy" src="img/product03.jpg" alt="Карточка товара Постельное белье" class="goods__img" width="420" height="295">
                             </picture>
                             <div class="goods__prices">
                                 <p class="goods__price">3902 ₽</p>
@@ -272,8 +324,12 @@
                         </div>
                         <a href="#" class="goods__content">
                             <picture class="goods__image-wrapper">
+                                <source srcset="img/product04_1024.avif" media="(max-width: 1200px)" type="image/avif">
+                                <source srcset="img/product04_1024.webp" media="(max-width: 1200px)" type="image/webp">
                                 <source srcset="img/product04_1024.jpg" media="(max-width: 1200px)">
-                                <img src="img/product04.jpg" alt="Карточка товара Фен" class="goods__img">
+                                <source srcset="img/product04.avif" type="image/avif">
+                                <source srcset="img/product04.webp" type="image/webp">
+                                <img loading="lazy" src="img/product04.jpg" alt="Карточка товара Фен" class="goods__img" width="420" height="295">
                             </picture>
                             <div class="goods__prices">
                                 <p class="goods__price">2999 ₽</p>
@@ -288,8 +344,12 @@
                         </div>
                         <a href="#" class="goods__content">
                             <picture class="goods__image-wrapper">
+                                <source srcset="img/product05_1024.avif" media="(max-width: 1200px)" type="image/avif">
+                                <source srcset="img/product05_1024.webp" media="(max-width: 1200px)" type="image/webp">
                                 <source srcset="img/product05_1024.jpg" media="(max-width: 1200px)">
-                                <img src="img/product05.jpg" alt="Карточка товара Постельное белье" class="goods__img">
+                                <source srcset="img/product05.avif" type="image/avif">
+                                <source srcset="img/product05.webp" type="image/webp">
+                                <img loading="lazy" src="img/product05.jpg" alt="Карточка товара Постельное белье" class="goods__img" width="420" height="295">
                             </picture>
                             <div class="goods__prices">
                                 <p class="goods__price">3902 ₽</p>
@@ -304,8 +364,12 @@
                         </div>
                         <a href="#" class="goods__content">
                             <picture class="goods__image-wrapper">
+                                <source srcset="img/product06_1024.avif" media="(max-width: 1200px)" type="image/avif">
+                                <source srcset="img/product06_1024.webp" media="(max-width: 1200px)" type="image/webp">
                                 <source srcset="img/product06_1024.jpg" media="(max-width: 1200px)">
-                                <img src="img/product06.jpg" alt="Карточка товара Фен" class="goods__img">
+                                <source srcset="img/product06.avif" type="image/avif">
+                                <source srcset="img/product06.webp" type="image/webp">
+                                <img loading="lazy" src="img/product06.jpg" alt="Карточка товара Фен" class="goods__img" width="420" height="295">
                             </picture>
                             <div class="goods__prices">
                                 <p class="goods__price">2999 ₽</p>
@@ -320,8 +384,12 @@
                         </div>
                         <a href="#" class="goods__content">
                             <picture class="goods__image-wrapper">
+                                <source srcset="img/product07_1024.avif" media="(max-width: 1200px)" type="image/avif">
+                                <source srcset="img/product07_1024.webp" media="(max-width: 1200px)" type="image/webp">
                                 <source srcset="img/product07_1024.jpg" media="(max-width: 1200px)">
-                                <img src="img/product07.jpg" alt="Карточка товара Варежки-мишки" class="goods__img">
+                                <source srcset="img/product07.avif" type="image/avif">
+                                <source srcset="img/product07.webp" type="image/webp">
+                                <img loading="lazy" src="img/product07.jpg" alt="Карточка товара Варежки-мишки" class="goods__img" width="420" height="295">
                             </picture>
                             <div class="goods__prices">
                                 <p class="goods__price">540 ₽</p>
@@ -336,8 +404,12 @@
                         </div>
                         <a href="#" class="goods__content">
                             <picture class="goods__image-wrapper">
+                                <source srcset="img/product08_1024.avif" media="(max-width: 1200px)" type="image/avif">
+                                <source srcset="img/product08_1024.webp" media="(max-width: 1200px)" type="image/webp">
                                 <source srcset="img/product08_1024.jpg" media="(max-width: 1200px)">
-                                <img src="img/product08.jpg" alt="Карточка товара Пара футболок" class="goods__img">
+                                <source srcset="img/product08.avif" type="image/avif">
+                                <source srcset="img/product08.webp" type="image/webp">
+                                <img loading="lazy" src="img/product08.jpg" alt="Карточка товара Пара футболок" class="goods__img" width="420" height="295">
                             </picture>
                             <div class="goods__prices">
                                 <p class="goods__price">1299 ₽</p>

@@ -11,29 +11,46 @@
         padding-bottom: 20px;
     }
     &__wrapper {
-        background: url("../img/banner.jpg") no-repeat;
+        background-image: url("../img/banner.jpg");
+        background-image: image-set(
+            url("../img/banner.avif") 1x,
+            url("../img/banner.webp") 1x,
+            url("../img/banner.jpg") 1x
+        );
+        background-repeat: no-repeat;
         background-size: cover;
         border-radius: 20px;
         min-height: 480px;
         padding-top: 152px;
         @include desktop-min {
-            background: url("../img/banner_1024.jpg") no-repeat;
-            background-size: cover;
+            background-image: url("../img/banner_1024.jpg");
+            background-image: image-set(
+                url("../img/banner_1024.avif") 1x,
+                url("../img/banner_1024.webp") 1x,
+                url("../img/banner_1024.jpg") 1x
+            );
             width: 100%;
+            border-radius: 16px;
             min-height: 314px;
             padding-top: 82px;
         }
         @include tablet {
-            background: url("../img/banner_768.jpg") no-repeat;
-            background-size: cover;
-            width: 100%;
+            background-image: url("../img/banner_768.jpg");
+            background-image: image-set(
+                url("../img/banner_768.avif") 1x,
+                url("../img/banner_768.webp") 1x,
+                url("../img/banner_768.jpg") 1x
+            );
             min-height: 280px;
             padding-top: 67px;
         }
         @include mobile-min {
-            background: url("../img/banner_320.jpg") no-repeat;
-            background-size: cover;
-            width: 100%;
+            background-image: url("../img/banner_320.jpg");
+            background-image: image-set(
+                url("../img/banner_320.avif") 1x,
+                url("../img/banner_320.webp") 1x,
+                url("../img/banner_320.jpg") 1x
+            );
             min-height: 340px;
             border-radius: 8px;
             padding-top: 52px;
