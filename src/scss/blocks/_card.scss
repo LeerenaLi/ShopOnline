@@ -1,0 +1,323 @@
+.card-page {
+    padding-bottom: 50px;
+    @include desktop-min {
+        padding-bottom: 40px;
+    }
+    @include tablet-max {
+        padding-bottom: 30px;
+    }
+}
+
+.card {
+    color: $color-dark;
+    &__title {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 1.3;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #E8E8E8;
+        @include desktop-min {
+            font-size: 40px;
+            max-width: 620px;
+            padding-bottom: 20px;
+        }
+        @include tablet-max {
+            font-size: 28px;
+            max-width: 540px;
+            padding-bottom: 10px;
+        }
+    }
+    &__wrapper {
+        padding-top: 43px;
+        display: grid;
+        grid-template-columns: 1fr max-content;
+        justify-content: space-between;
+        grid-template-areas: 
+        "photo book"
+        "description .";
+        row-gap: 80px;
+        @include desktop-min {
+            padding-top: 50px;
+            grid-template-areas: 
+            "photo book"
+            "description description";
+            row-gap: 70px;
+        }
+        @include tablet-max {
+            padding-top: 34px;
+            row-gap: 40px;
+        }
+        @include mobile-max {
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "photo"
+            "book"
+            "description";
+        }
+        @include mobile-min {
+            row-gap: 20px;
+            grid-template-areas: 
+            "photo"
+            "book"
+            "description";
+        }
+    }
+    &__photo {
+        position: relative;
+        grid-area: photo;
+        max-width: 757px;
+        @include desktop-min {
+            max-width: 540px;
+        }
+        @include tablet-max {
+            max-width: 380px;
+        }
+        @include tablet-min {
+            max-width: 280px;
+        }
+        @include mobile-max {
+            margin: 0 auto;
+        }
+        @include mobile-min {
+            margin: 0;
+        }
+    }
+    &__label {
+        position: absolute;
+        width: 88px;
+        height: 88px;
+        top: 20px;
+        left: 620px;
+        background-color: $color-yellow;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include desktop-min {
+            width: 66px;
+            height: 66px;
+            left: 444px;
+        }
+        @include tablet-max {
+            width: 50px;
+            height: 50px;
+            left: 300px;
+        }
+        @include tablet-min {
+            width: 32px;
+            height: 32px;
+            left: 243px;
+        }
+    }
+    &__sale {
+        color: $color-white;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.3;
+        @include desktop-min {
+            font-size: 20px;
+        }
+        @include tablet-max {
+            font-size: 16px;
+        }
+        @include tablet-min {
+            font-size: 12px;
+        }
+    }
+    &__book {
+        grid-area: book;
+    }
+    &__content {
+        grid-area: description;
+        max-width: 1230px;
+        @include mobile-min {
+            max-width: 280px;
+        }
+    }
+    &__description {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.3;
+        margin-bottom: 20px;
+        @include desktop-min {
+            font-size: 24px;
+        }
+        @include tablet-max {
+            font-size: 18px;
+        }
+        @include mobile-min {
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+    }
+    &__text {
+        font-size: 22px;
+        line-height: 1.5;
+        @include desktop-min {
+            font-size: 18px;
+        }
+        @include tablet-max {
+            font-size: 16px;
+        }
+        @include mobile-min {
+            font-size: 12px;
+        }
+    }
+}
+
+.book {
+    width: 420px;
+    height: 367px;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.25);
+    @include desktop-min  {
+        width: 300px;
+        height: 323px;
+        padding: 25px 24px 27px 20px;
+    }
+    @include mobile-max {
+        width: 100%;
+        padding: 25px 30px 30px 30px;
+        border-radius: 0;
+        box-shadow: 0 15px 15px -15px rgba(0, 0, 0, 0.25) , 0 -15px 15px -15px rgba(0, 0, 0, 0.25);
+    }
+    @include mobile-min {
+        width: 280px;
+        height: 252px;
+        margin-bottom: 10px;
+    }
+    &__wrapper {
+        @include mobile-max {
+            width: 280px;
+            margin: 0 auto;
+        }
+        @include mobile-min {
+            margin: 0;
+        }
+    }
+    &__price {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 7px;
+        @include desktop-min {
+            margin-bottom: 16px;           
+        }
+        @include mobile-min {
+            gap: 18px;
+            margin-bottom: 13px;
+        }
+    }
+    &__price-act {
+        color: $color-red;
+        font-size: 36px;
+        font-weight: 700;
+        @include desktop-min {
+           font-size: 28px;            
+        }
+        @include mobile-min {
+            font-size: 20px;
+        }
+    }
+    &__price-old {
+        font-size: 22px;
+        text-decoration-line: line-through;
+        @include desktop-min {
+            font-size: 18px;            
+        }
+        @include mobile-min {
+            font-size: 12px;
+        }
+    }
+    &__blue-text {
+        color: $color-blue;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.3;
+        @include desktop-min {
+            font-size: 14px;            
+        }
+        @include mobile-min {
+            font-size: 12px;
+        }
+    }
+    &__buttons {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        gap: 23px;
+        @include desktop-min {
+            gap: 21px;           
+        }
+        @include mobile-min {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            gap: 17px;
+        }
+    }
+    &__btn {
+        padding: 16px 41px;
+        background-color: $color-blue;
+        color: $color-white;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.3;
+        border-radius: 10px;
+        border: 1px solid $color-blue;
+        @include desktop-min {
+            padding: 11px 20px;          
+        }
+        @include mobile-min {
+            font-size: 12px;
+            padding: 7px 17px;
+        }
+
+    }
+    &__favorite {
+        width: 33px;
+        height: 33px;
+        color: $color-blue;
+        background-color: transparent;
+        border: none;
+        @include mobile-min {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    
+    &__info {
+        display: flex;
+        gap: 73px;
+        font-size: 16px;
+        line-height: 1.3;
+        margin-bottom: 33px;
+        @include mobile-min {
+            font-size: 12px;
+            margin-bottom: 22px;
+        }
+    }
+    &__delivery {
+        margin-bottom: 5px;
+    }
+    &__info-light {
+        color: $color-light-gray;
+    }
+    &__sales {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        color: $color-blue;
+    }
+    &__sales svg {
+        @include desktop-min {
+            width: 22px;
+            height: 22px;
+        }
+        @include mobile-min {
+            width: 14px;
+            height: 14px;
+        }
+    }
+}

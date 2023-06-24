@@ -1,0 +1,25 @@
+.bread {
+    margin-bottom: 80px;
+    @include desktop-min {
+        margin-bottom: 60px;
+    }
+    @include tablet {
+        margin-bottom: 50px;
+    }
+    @include mobile {
+        margin-bottom: 30px;
+    }
+    &__link {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+        color: $color-gray;
+        margin-right: 10px;
+        &:hover {
+            color: $color-blue;
+        }
+    }
+    &__img {
+        margin-right: 10px;
+    }
+}

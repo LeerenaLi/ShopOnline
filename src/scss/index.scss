@@ -1,3 +1,4 @@
+@import 'libs/normalize';
 @import 'libs/fonts';
 @import 'libs/var';
 @import 'libs/default';
@@ -5,8 +6,11 @@
 @import 'blocks/search';
 @import 'blocks/icons';
 @import 'blocks/navigation';
+@import 'blocks/bread';
 @import 'blocks/banner';
 @import 'blocks/promo';
 @import 'blocks/goods';
 @import 'blocks/blog';
+@import 'blocks/pagination';
+@import 'blocks/card';
 @import 'blocks/footer';

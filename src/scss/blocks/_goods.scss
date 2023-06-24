@@ -153,5 +153,16 @@
             font-size: 12px;
         }
     }
+    &__desktop {
+        @include desktop-min {
+            display: none;
+        }
+    }
+    &__desktop-min {
+        display: none;
+        @include desktop-min {
+            display: block;
+        }
+    }
 }
 
