@@ -1,0 +1,238 @@
+.article {
+    padding: 34px 0 148px 0;
+    @include desktop-min {
+        padding: 44px 0 100px 0;
+    }
+    @include tablet-middle {
+        padding:  15px 0 80px 0;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: auto 532px;
+        column-gap: 143px;
+        @include desktop-min {
+            column-gap: 20px;
+            grid-template-columns: auto 300px;
+        }
+        @include tablet-middle {
+            grid-template-columns: 1fr;
+            row-gap: 60px;
+        }
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 1.3;
+        color: $color-dark;
+        margin-bottom: 40px;
+        @include desktop-min {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+        @include tablet-middle {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        @include mobile {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    }
+    &__body {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 1.5;
+        color: $color-dark;
+        margin-bottom: 100px;
+        @include desktop-min {
+            font-size: 18px;
+            margin-bottom: 60px;
+        }
+        @include tablet-middle {
+            font-size: 16px;
+            line-height: 1.3;
+        }
+        @include mobile {
+            font-size: 12px;
+            margin-bottom: 30px;
+        }
+    }
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__back {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.3;
+        color: $color-dark;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        align-self: flex-end;
+        &:hover {
+            color: $color-blue;
+        }
+        @include desktop-min {
+            font-size: 14px;
+            gap: 4px;
+        }
+        @include mobile {
+            font-size: 10px;
+            gap: 5px;
+        }
+    }
+    &__back svg {
+        @include mobile {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+.marketing {
+    @include mobile {
+        display: none;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        @include desktop-min {
+            gap: 40px;
+        }
+        @include tablet-middle {
+            flex-direction: row;
+            gap: 60px;
+            justify-content: space-between;
+        }
+    }
+    &__item {
+        position: relative;
+    }
+    &__content {
+        position: absolute;
+        bottom: 43px;
+        left: 30px;
+        @include desktop-min {
+            bottom: 20px;
+            left: 10px;
+        }
+    }
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.3;
+        margin-bottom: 10px;
+        @include desktop-min {
+            font-size: 22px;
+        }
+    }
+    &__text {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.3;
+        @include desktop-min {
+            font-size: 14px;
+        }
+    }
+}
+
+
+.autor {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    &__name {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 1.5;
+        color: $color-dark;
+        @include desktop-min {
+            font-size: 18px;
+        }
+        @include tablet-middle {
+            font-size: 16px;
+        }
+        @include mobile {
+            font-size: 14px;
+        }
+    }
+    &__email {
+        display: block;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.3;
+        color: $color-dark;
+        margin-bottom: 20px;
+        @include desktop-min {
+            font-size: 14px;
+        }
+        @include tablet-middle {
+            font-size: 12px;
+        }
+        @include mobile {
+            font-size: 10px;
+        }
+        &:hover {
+            color: $color-blue;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1;
+        color: $color-light-gray;
+        @include desktop-min {
+            font-size: 14px;
+        }
+        @include tablet-middle {
+            font-size: 12px;
+        }
+        @include mobile {
+            font-size: 10px;
+        }
+    }
+}
+
+
+//
+
+.autor__date, .autor__count {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    color: #8F8F8F;
+}
+
+.autor__date {
+    margin-bottom: 15px;
+}
+
+.autor__scan {
+    display: flex;
+    gap: 37px;
+}
+
+.autor__aye {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.autor__comments {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+

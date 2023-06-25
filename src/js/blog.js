@@ -189,31 +189,63 @@ const createArticlePage = async (articlePageID, articleData, userId) => {
             <a href="article.html?id=${articlePageID}" class="bread__link">${articleData.title}</a>
         </div>
         <div class="article__wrapper">
-                <div class="article__text">
+            <div class="article__text">
+                <div class="article__content">
                     <div class="article__title">${articleData.title}</div>
                     <p class="article__body">${articleData.body}</p>
+                </div>
+                <div class="article__footer">
+                    <a href="blog.html" class="article__back">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 11H6.83L10.41 7.41L9 6L3 12L9 18L10.41 16.59L6.83 13H21V11Z"/>
+                        </svg>
+                        <p class="article__link">К списку статей</p>
+                    </a>
                     
-                    <div class="article__footer">
-                        <div class="back">
-                            <img src="icons/blog/left.svg" alt="arrow back" class="back__img">
-                            <a href="blog.html" class="back__link">К списку статей</a>
-                        </div>
-                        
-                        <div class="autor">
-                            <p class="autor__name">${dataUser.name}</p>
-                            <div class="autor__info">
-                                <p class="autor__status">Gender: ${dataUser.gender}</p>
-                                <p class="autor__status">Status: ${dataUser.status}</p>
-                            </div>
-                            <a href="mailto:${dataUser.email}" class="autor__email">E-mail: ${dataUser.email}</a>
+                    <div class="autor">
+                        <p class="autor__name">${dataUser.name}</p>
+                        <a href="mailto:${dataUser.email}" class="autor__email">E-mail: ${dataUser.email}</a>
+                        <div class="autor__info">
+                            <p class="autor__status">Gender: ${dataUser.gender}</p>
+                            <p class="autor__status">Status: ${dataUser.status}</p>
                         </div>
                     </div>
                 </div>
-                <div class="article__adevertisting">
-                    <img src="img/blog/add.jpg" alt="adevertisting" class="article__img">
-                    <img src="img/blog/add2.jpg" alt="adevertisting" class="article__img">
-                </div>
             </div>
+            <div class="article__marketing marketing">
+                <ul class="marketing__list">
+                    <li class="marketing__item">
+                        <picture class="marketing__image-wrapper">
+                            <source srcset="img/blog/marketing01_1024.avif" media="(max-width: 1200px)" type="image/avif">
+                            <source srcset="img/blog/marketing01_1024.webp" media="(max-width: 1200px)" type="image/webp">
+                            <source srcset="img/blog/marketing01_1024.jpg" media="(max-width: 1200px)"  width="300" height="254">
+                            <source srcset="img/blog/marketing01.avif" type="image/avif">
+                            <source srcset="img/blog/marketing01.webp" type="image/webp">
+                            <img src="img/blog/marketing01.jpg" alt="marketing" class="marketing__img" width="532" height="328">
+                        </picture>
+                        <div class="marketing__content">
+                            <p class="marketing__title">Горящие туры в&nbsp;Стамбул от&nbsp;20&nbsp;000&nbsp;руб.</p>
+                            <p class="marketing__text">Окунись в&nbsp;настоящую восточную сказку</p>
+                        </div>
+                    </li>
+
+                    <li class="marketing__item">
+                        <picture class="marketing__image-wrapper">
+                            <source srcset="img/blog/marketing02_1024.avif" media="(max-width: 1200px)" type="image/avif">
+                            <source srcset="img/blog/marketing02_1024.webp" media="(max-width: 1200px)" type="image/webp">
+                            <source srcset="img/blog/marketing02_1024.jpg" media="(max-width: 1200px)" width="300" height="254">
+                            <source srcset="img/blog/marketing02.avif" type="image/avif">
+                            <source srcset="img/blog/marketing02.webp" type="image/webp">
+                            <img src="img/blog/marketing01.jpg" alt="marketing" class="marketing__img" width="532" height="328">
+                        </picture>
+                        <div class="marketing__content">
+                            <p class="marketing__title">Новый RENAULT&nbsp;DUSTER</p>
+                            <p class="marketing__text">Легендарный внедорожник в&nbsp;новом дизайне</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     `);
 };
 

@@ -16,6 +16,8 @@
         border-radius: 30px;
         border: 1px solid $color-bg-input;
         outline: none;
+        color: $color-dark;
+        font-weight: 700;
         @include laptop {
             height: 42px;
         }
@@ -25,7 +27,9 @@
             padding-bottom: 6px;
         }
         &::placeholder {
+            font-weight: 400;
             font-size: 16px;
+            color: $color-light-gray;
             @include mobile {
                 font-size: 8px;
             }

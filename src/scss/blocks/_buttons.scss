@@ -1,0 +1,12 @@
+.btn {
+    background-color: $color-blue;
+    color: $color-white;
+    border-radius: 10px;
+    border: none;
+    &:hover, &:active {
+        background-color: #5D92E0;
+    }
+    &:focus {
+        background-color: #3B65A5;
+    }
+}

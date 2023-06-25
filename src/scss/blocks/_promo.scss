@@ -63,6 +63,21 @@
             row-gap: 20px;
         }
     }
+    &__item {
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        position: relative;
+        @include laptop {
+            border-radius: 16px;
+        }
+        @include tablet-middle {
+            border-radius: 12px;
+        }
+        @include mobile-min {
+            border-radius: 8px;
+        }
+    }
     &__book {
         background-image: url("../img/book.jpg");
         background-image: image-set(
@@ -70,8 +85,6 @@
             url("../img/book.webp") 1x,
             url("../img/book.jpg") 1x
         );
-        background-repeat: no-repeat;
-        border-radius: 20px;
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         padding: 20px;
@@ -85,8 +98,6 @@
                 url("../img/book_1024.webp") 1x,
                 url("../img/book_1024.jpg") 1x
             );
-            border-radius: 16px;
-            background-size: cover;
             padding: 32px 13px;
         }
         @include tablet-middle {
@@ -96,7 +107,6 @@
                 url("../img/book_768.webp") 1x,
                 url("../img/book_768.jpg") 1x
             );
-            border-radius: 12px;
             padding: 15px 10px;
         }
         @include mobile {
@@ -116,7 +126,6 @@
                 url("../img/book_320.webp") 1x,
                 url("../img/book_320.jpg") 1x
             );
-            border-radius: 8px;
             padding-left: 10px;
             padding-right: 55px;
             padding-bottom: 10px;
@@ -167,18 +176,6 @@
                 line-height: 130%;
             }
         }
-        &_label {
-            @include tablet-max {
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 130%;
-            }
-            @include mobile-min {
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 130%;
-            }
-        }
         &_chemicals {
             @include desktop-middle {
                 font-size: 20px;
@@ -201,13 +198,10 @@
             url("../img/time.webp") 1x,
             url("../img/time.jpg") 1x
         );
-        background-repeat: no-repeat;
-        border-radius: 20px;
         grid-column: 2 / 3;
         grid-row: 1 / 2;
         padding: 67px 14px;
         display: flex;
-        position: relative;
         @include desktop-middle {
             padding-top: 10px;
         }
@@ -221,8 +215,6 @@
                 url("../img/time_1024.webp") 1x,
                 url("../img/time_1024.jpg") 1x
             );
-            border-radius: 16px;
-            background-size: cover;
         }
         @include tablet-max {
             padding: 17px 15px;
@@ -234,7 +226,6 @@
                 url("../img/time_768.webp") 1x,
                 url("../img/time_768.jpg") 1x
             );
-            border-radius: 12px;
             padding: 15px;
         }
         @include mobile-max {
@@ -258,52 +249,7 @@
                 url("../img/time_320.webp") 1x,
                 url("../img/time_320.jpg") 1x
             );
-            border-radius: 8px;
             padding: 18px 10px;
-        }
-    }
-    &__label {
-        position: absolute;
-        width: 88px;
-        height: 88px;
-        background: $color-yellow;
-        border-radius: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @include tablet-max {
-            width: 50px;
-            height: 50px;
-        }
-        &_bottom-right {
-            bottom: 20px;
-            right: 20px;
-            @include laptop {
-                bottom: 10px;
-                right: 10px;
-            }
-            @include mobile-min {
-                bottom: 5px;
-                right: 5px;
-            }
-        }
-        &_top-left {
-            top: 20px;
-            left: 20px;
-            @include laptop {
-                top: 10px;
-                left: 10px;
-            }
-            @include mobile-min {
-                top: 5px;
-                left: 5px;
-            }
-        }
-        &_bottom-right-dress {
-            @include mobile-min {
-                bottom: 9px;
-                right: 10px;
-            }
         }
     }
     &__second {
@@ -313,8 +259,6 @@
             url("../img/second_gift.webp") 1x,
             url("../img/second_gift.jpg") 1x
         );
-        background-repeat: no-repeat;
-        border-radius: 20px;
         grid-column: 3 / 5;
         grid-row: 1 / 3;
         padding: 20px;
@@ -327,8 +271,6 @@
                 url("../img/second_gift_1024.webp") 1x,
                 url("../img/second_gift_1024.jpg") 1x
             );
-            background-size: cover;
-            border-radius: 16px;
         } 
         @include tablet-middle {
             background-image: url("../img/second_gift_768.jpg");
@@ -337,7 +279,6 @@
                 url("../img/second_gift_768.webp") 1x,
                 url("../img/second_gift_768.jpg") 1x
             );
-            border-radius: 12px;
             padding: 10px;
         }
         @include mobile {
@@ -357,7 +298,6 @@
                 url("../img/second_gift_320.webp") 1x,
                 url("../img/second_gift_320.jpg") 1x
             );
-            border-radius: 8px;
             padding: 10px;
         }
     }
@@ -467,8 +407,6 @@
             url("../img/new_year.webp") 1x,
             url("../img/new_year.jpg") 1x
         );
-        background-repeat: no-repeat;
-        border-radius: 20px;
         grid-column: 5 / 7;
         grid-row: 1 / 2;
         padding: 30px;
@@ -490,17 +428,14 @@
                 url("../img/new_year_1024.webp") 1x,
                 url("../img/new_year_1024.jpg") 1x
             );
-            background-size: cover;
-            border-radius: 16px;
         }
         @include tablet-middle {
             background-image: url("../img/new_year_768.jpg");
             background-image: image-set(
-                url("../img/new_year_786.avif") 1x,
-                url("../img/new_year_786.webp") 1x,
-                url("../img/new_year_786.jpg") 1x
+                url("../img/new_year_768.avif") 1x,
+                url("../img/new_year_768.webp") 1x,
+                url("../img/new_year_768.jpg") 1x
             );
-            border-radius: 12px;
             padding: 18px 21px;
         }
         @include mobile {
@@ -520,7 +455,6 @@
                 url("../img/new_year_320.webp") 1x,
                 url("../img/new_year_320.jpg") 1x
             );
-            border-radius: 8px;
             padding: 16px 10px;
             flex-direction: row;
             align-items: flex-end;
@@ -576,11 +510,8 @@
             url("../img/running_shoe.webp") 1x,
             url("../img/running_shoe.jpg") 1x
         );
-        background-repeat: no-repeat;
-        border-radius: 20px;
         grid-column: 1 / 3;
         grid-row: 2 / 3;
-        position: relative;
         @include laptop {
             background-image: url("../img/running_shoe_1024.jpg");
             background-image: image-set(
@@ -588,8 +519,6 @@
                 url("../img/running_shoe_1024.webp") 1x,
                 url("../img/running_shoe_1024.jpg") 1x
             );
-            background-size: cover;
-            border-radius: 16px;
         }
         @include tablet-middle {
             background-image: url("../img/running_shoe_768.jpg");
@@ -598,7 +527,6 @@
                 url("../img/running_shoe_768.webp") 1x,
                 url("../img/running_shoe_768.jpg") 1x
             );
-            border-radius: 12px;
         }
         @include mobile {
             grid-column: 1 / 3;
@@ -617,7 +545,6 @@
                 url("../img/running_shoe_320.webp") 1x,
                 url("../img/running_shoe_320.jpg") 1x
             );
-            border-radius: 8px;
         }
     }
     &__december {
@@ -627,11 +554,8 @@
             url("../img/december.webp") 1x,
             url("../img/december.jpg") 1x
         );
-        background-repeat: no-repeat;
-        border-radius: 20px;
         grid-column: 5 / 7;
         grid-row: 2 / 3;
-        position: relative;
         padding: 40px 30px;
         display: flex;
         align-items: flex-end;
@@ -647,8 +571,6 @@
                 url("../img/december_1024.webp") 1x,
                 url("../img/december_1024.jpg") 1x
             );
-            background-size: cover;
-            border-radius: 16px;
         }
         @include tablet-middle {
             background-image: url("../img/december_768.jpg");
@@ -657,7 +579,6 @@
                 url("../img/december_768.webp") 1x,
                 url("../img/december_768.jpg") 1x
             );
-            border-radius: 12px;
             padding: 20px 21px;
         }
         @include mobile {
@@ -677,7 +598,6 @@
                 url("../img/december_320.webp") 1x,
                 url("../img/december_320.jpg") 1x
             );
-            border-radius: 8px;
             padding: 16px 10px;
         }
     }
@@ -688,8 +608,6 @@
             url("../img/decoration.webp") 1x,
             url("../img/decoration.jpg") 1x
         );
-        background-repeat: no-repeat;
-        border-radius: 20px;
         grid-column: 1 / 5;
         grid-row: 3 / 5;
         padding: 50px;
@@ -711,8 +629,6 @@
                 url("../img/decoration_1024.webp") 1x,
                 url("../img/decoration_1024.jpg") 1x
             );
-            background-size: cover;
-            border-radius: 16px;
             padding: 39px 30px;
         }
         @include tablet-max {
@@ -726,7 +642,6 @@
                 url("../img/decoration_768.webp") 1x,
                 url("../img/decoration_768.jpg") 1x
             );
-            border-radius: 12px;
             padding: 26px;
         }
         @include mobile {
@@ -750,7 +665,6 @@
                 url("../img/decoration_320.webp") 1x,
                 url("../img/decoration_320.jpg") 1x
             );
-            border-radius: 8px;
             padding: 10px 15px;
         }
     }
@@ -804,11 +718,8 @@
             url("../img/dress.webp") 1x,
             url("../img/dress.jpg") 1x
         );
-        background-repeat: no-repeat;
-        border-radius: 20px;
         grid-column: 5 / 6;
         grid-row: 3 / 5;
-        position: relative;
         @include desktop-min {
             grid-column: 3 / 4;
             grid-row: 3 / 5;
@@ -820,8 +731,6 @@
                 url("../img/dress_1024.webp") 1x,
                 url("../img/dress_1024.jpg") 1x
             );
-            background-size: cover;
-            border-radius: 16px;
         }
         @include tablet-middle {
             background-image: url("../img/dress_768.jpg");
@@ -830,7 +739,6 @@
                 url("../img/dress_768.webp") 1x,
                 url("../img/dress_768.jpg") 1x
             );
-            border-radius: 12px;
         }
         @include mobile {
             grid-column: 1 / 2;
@@ -849,7 +757,6 @@
                 url("../img/dress_320.webp") 1x,
                 url("../img/dress_320.jpg") 1x
             );
-            border-radius: 8px;
         }
     }
     &__chemicals {
@@ -859,11 +766,8 @@
             url("../img/chemicals.webp") 1x,
             url("../img/chemicals.jpg") 1x
         );
-        background-repeat: no-repeat;
-        border-radius: 20px;
         grid-column: 6 / 7;
         grid-row: 3 / 4;
-        position: relative;
         padding: 20px;
         display: flex;
         align-items: flex-end;
@@ -879,9 +783,7 @@
                 url("../img/chemicals_1024.webp") 1x,
                 url("../img/chemicals_1024.jpg") 1x
             );
-            background-size: cover;
             padding-left: 11px;
-            border-radius: 16px;
         }
         @include tablet-middle {
             background-image: url("../img/chemicals_768.jpg");
@@ -890,7 +792,6 @@
                 url("../img/chemicals_768.webp") 1x,
                 url("../img/chemicals_768.jpg") 1x
             );
-            border-radius: 12px;
             padding: 18px 15px;
         }
         @include mobile {
@@ -910,7 +811,6 @@
                 url("../img/chemicals_320.webp") 1x,
                 url("../img/chemicals_320.jpg") 1x
             );
-            border-radius: 8px;
             padding: 11px 9px;
             height: 95px;
         }
@@ -922,8 +822,6 @@
             url("../img/balls.webp") 1x,
             url("../img/balls.jpg") 1x
         );
-        background-repeat: no-repeat;
-        border-radius: 20px;
         grid-column: 6 / 7;
         grid-row: 4 / 5;
         @include desktop-min {
@@ -937,8 +835,6 @@
                 url("../img/balls_1024.webp") 1x,
                 url("../img/balls_1024.jpg") 1x
             );
-            background-size: cover;
-            border-radius: 16px;
         }
         @include tablet-max {
             margin-bottom: 0;
@@ -950,7 +846,6 @@
                 url("../img/balls_768.webp") 1x,
                 url("../img/balls_768.jpg") 1x
             );
-            border-radius: 12px;
         }
         @include mobile {
             grid-column: 2 / 3;
@@ -969,7 +864,6 @@
                 url("../img/balls_320.webp") 1x,
                 url("../img/balls_320.jpg") 1x
             );
-            border-radius: 8px;
         }
     }
 }

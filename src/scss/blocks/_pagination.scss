@@ -34,6 +34,10 @@
             border: 2px solid $color-blue;
             color: $color-blue;
         }
+        &:focus {
+            border: 2px solid #3B65A5;
+            color: #3B65A5;
+        }
         &_active {
             border: 2px solid $color-blue;
             color: $color-blue;
