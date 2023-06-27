@@ -26,6 +26,8 @@ const sass = gulpSass(sassPkg);
 const allJS = [
     'src/js/timer.js',
     'src/js/blog.js',
+    'src/js/menu.js',
+    'src/js/renderCategoryGoods.js',
 ];
 
 // tasks
@@ -76,14 +78,14 @@ export const style = () => {
 
 export const js = () => gulp
         .src([...allJS, 'src/js/**/*.js'])
-        .pipe(gulpif(dev, sourcemaps.init()))
-        .pipe(babel({
-            presets: ['@babel/preset-env'],
-            ignore: [...allJS, 'src/js/**/*.min.js'],
-        }))
-        .pipe(terser())
-        .pipe(concat('index.min.js'))
-        .pipe(gulpif(dev, sourcemaps.write('../maps')))
+        // .pipe(gulpif(dev, sourcemaps.init()))
+        // .pipe(babel({
+        //     presets: ['@babel/preset-env'],
+        //     ignore: [...allJS, 'src/js/**/*.min.js'],
+        // }))
+        // .pipe(terser())
+        // // .pipe(concat('index.min.js'))
+        // .pipe(gulpif(dev, sourcemaps.write('../maps')))
         .pipe(gulp.dest('dist/js'))
         .pipe(browserSync.stream());
 
