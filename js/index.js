@@ -1,6 +1,8 @@
 import {initBlog} from './blog.js';
 import {menuControl} from './menu.js';
-import {categoryControl} from './renderCategoryGoods.js';
+import {cardPageControl} from './renderCardPage.js';
+import {categoryControl} from './renderCategory.js';
+import {discountGoodsConrtol} from './renderDiscontGoods.js';
 import {startTimer} from './timer.js';
 
 {
@@ -8,7 +10,9 @@ import {startTimer} from './timer.js';
         window.timerInit = startTimer;
 
         menuControl();
+        discountGoodsConrtol();
         categoryControl();
+        cardPageControl();
 
         initBlog();
     };
