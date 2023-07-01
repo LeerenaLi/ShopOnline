@@ -20,15 +20,15 @@
             <div class="header__wrapper">
                 <a href="index.html" class="header__logo" alt="Логотип компании ShopOnline">Shop<span class="header__logo header__logo_color">Online</span></a>
                 <button class="header__btn btn">
-                    <img src="icons/sort.svg" alt="" class="header__btn-open">
-                    <img src="icons/clear.svg" alt="" class="header__btn-close">
+                    <img src="icons/sort.svg" alt="btn open" class="header__btn-open" width="24" height="24">
+                    <img src="icons/clear.svg" alt="btn close" class="header__btn-close" width="24" height="24">
                     Меню
                 </button>
                 
                 <form action="#" class="search">
                     <input type="search" class="search__input" placeholder="Я ищу...">
                     <button class="search__button">
-                        <img src="icons/loupe.svg" alt="search img" class="search__img">
+                        <img src="icons/loupe.svg" alt="search img" class="search__img" width="27" height="27">
                     </button>
                 </form>
                 <div class="icons">
@@ -44,11 +44,12 @@
                             </a>
                         </li>
                         <li class="icons__item">
-                            <a href="#" class="icons__link" aria-label="Корзина">
+                            <a href="cart.html" class="icons__link" aria-label="Корзина">
                                 <div class="icons__img icons__img_count">
                                     <svg width="36" height="36" viewbox="0 0 36 36" fill="#2D2D2D" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10.5 27C8.85 27 7.515 28.35 7.515 30C7.515 31.65 8.85 33 10.5 33C12.15 33 13.5 31.65 13.5 30C13.5 28.35 12.15 27 10.5 27ZM1.5 3V6H4.5L9.9 17.385L7.875 21.06C7.635 21.48 7.5 21.975 7.5 22.5C7.5 24.15 8.85 25.5 10.5 25.5H28.5V22.5H11.13C10.92 22.5 10.755 22.335 10.755 22.125L10.8 21.945L12.15 19.5H23.325C24.45 19.5 25.44 18.885 25.95 17.955L31.32 8.22C31.44 8.01 31.5 7.755 31.5 7.5C31.5 6.675 30.825 6 30 6H7.815L6.405 3H1.5ZM25.5 27C23.85 27 22.515 28.35 22.515 30C22.515 31.65 23.85 33 25.5 33C27.15 33 28.5 31.65 28.5 30C28.5 28.35 27.15 27 25.5 27Z" />
                                     </svg>
+                                    <span class="icons__header-count">2</span>
                                 </div>
                                 <p class="icons__text">Корзина</p>
                             </a>
@@ -68,38 +69,39 @@
             </div>
 
             <nav class="navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Смартфоны</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Ноутбуки</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Ювелирные изделия</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Одежда</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Бытовая техника</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Бытовая химия</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Книги и журналы</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Домашний текстиль</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Электроника</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Косметика</a>
-                    </li>
-                </ul>
+                <div class="navigation__wrapper">
+
+                    <h3 class="navigation__title navigation__title_catalog">Каталог</h3>
+
+                    <ul class="navigation__list navigation__list_catalog">
+                        
+                    </ul>
+
+                    <h3 class="navigation__title navigation__title_users">Покупателям</h3>
+
+                    <ul class="navigation__list navigation__list_users">
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Оплата заказа</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Условия доставки</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Условия возврата заказа</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Блог</a>
+                        </li>
+                    </ul>
+
+                    <h3 class="navigation__title navigation__title_contacts">Связаться с нами</h3>
+
+                    <ul class="navigation__list navigation__list_contacts">
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
@@ -110,11 +112,11 @@
                 <div class="card-page__bread bread">
                     <a href="index.html" class="bread__link">Главная</a>
                     <img src="icons/blog/bread__right.svg" alt="arrow right" class="bread__img">
-                    <a href="#" class="bread__link">Каталог</a>
+                    <a href="categories.html" class="bread__link bread__link_catalog">Каталог</a>
                     <img src="icons/blog/bread__right.svg" alt="arrow right" class="bread__img">
-                    <a href="#" class="bread__link">Ноутбуки</a>
+                    <a href="#" class="bread__link bread__link_category">Ноутбуки</a>
                     <img src="icons/blog/bread__right.svg" alt="arrow right" class="bread__img">
-                    <a href="card-page.html" class="bread__link">ASUS</a>
+                    <a href="card-page.html" class="bread__link bread__link_product">ASUS</a>
                 </div>
     
                 <div class="card-page__card card">
@@ -122,17 +124,17 @@
     
                     <div class="card__wrapper">
                         <div class="card__photo">
-                            <div class="label card__label">
+                            <!-- <div class="label card__label">
                                 <p class="card__sale">-15%</p>
                             </div>
                             <picture class="card__image-wrapper">
                                 <source srcset="img/noutbook_asusG5.avif" type="image/avif">
                                 <source srcset="img/noutbook_asusG5.webp" type="image/webp">
                                 <img src="img/noutbook_asusG5.jpg" alt="Ноутбук Asus" class="card__img" width="757" height="427">
-                            </picture>
+                            </picture> -->
                         </div>
                         <div class="card__book book">
-                            <div class="book__wrapper">
+                            <!-- <div class="book__wrapper">
                                 <div class="book__price">
                                     <p class="book__price-act">109 090 ₽</p>
                                     <p class="book__price-old">140 590 ₽</p>
@@ -162,7 +164,7 @@
                                     </svg>
                                     <p class="book__blue-text">Узнать о снижении цены</p>    
                                 </a>
-                            </div>
+                            </div> -->
                         </div>
     
                         <div class="card__content">
@@ -179,67 +181,8 @@
             <div class="container">
                 <h2 class="goods__title">Рекомендуем также</h2>
     
-                <ul class="goods__list">
-                    <li class="goods__item">
-                        <a href="#" class="goods__content">
-                            <picture class="goods__image-wrapper">
-                                <source srcset="img/nout01.avif" type="image/avif">
-                                <source srcset="img/nout01.webp" type="image/webp">
-                                <img loading="lazy" src="img/nout01.jpg" alt="Ноутбук Dell" class="goods__img" width="420" height="295">
-                            </picture>
-                            
-                            <div class="goods__prices">
-                                <p class="goods__price">96 320 ₽</p>
-                            </div>
-                            <p class="goods__description">Ноутбук Dell</p>
-                        </a>
-                    </li>
-                    <li class="goods__item">
-                        <a href="#" class="goods__content">
-                            <picture class="goods__image-wrapper">
-                                <source srcset="img/nout02.avif" type="image/avif">
-                                <source srcset="img/nout02.webp" type="image/webp">
-                                <img loading="lazy" src="img/nout02.jpg" alt="Ноутбук HP 250" class="goods__img" width="420" height="295">
-                            </picture>
-                            
-                            <div class="goods__prices">
-                                <p class="goods__price">64 949 ₽</p>
-                            </div>
-                            <p class="goods__description">Ноутбук HP 250</p>
-                        </a>
-                    </li>
-                    <li class="goods__item">
-                        <a href="#" class="goods__content">
-                            <picture class="goods__image-wrapper">
-                                <source srcset="img/nout03.avif" type="image/avif">
-                                <source srcset="img/nout03.webp" type="image/webp">
-                                <img loading="lazy" src="img/nout03.jpg" alt="Ноутбук HP 15" class="goods__img" width="420" height="295">
-                            </picture>
-                            
-                            <div class="goods__prices">
-                                <p class="goods__price">37 980 ₽</p>
-                            </div>
-                            <p class="goods__description">Ноутбук HP 15</p>
-                        </a>
-                    </li>
-                    <li class="goods__item">
-                        <div class="label label__goods label_bottom-left">
-                            <p class="label__title label__title_goods">-10%</p>
-                        </div>
-                        <a href="#" class="goods__content">
-                            <picture class="goods__image-wrapper">
-                                <source srcset="img/nout04.avif" type="image/avif">
-                                <source srcset="img/nout04.webp" type="image/webp">
-                                <img loading="lazy" src="img/nout04.jpg" alt="Ноутбук ASUS ZenBook Pro" class="goods__img" width="420" height="295">
-                            </picture>
-                            
-                            <div class="goods__prices">
-                                <p class="goods__price">102 680 ₽</p>
-                                <p class="goods__price-old">105 999 ₽</p>
-                            </div>
-                            <p class="goods__description">Ноутбук ASUS ZenBook Pro</p>
-                        </a>
-                    </li>
+                <ul class="goods__list goods__list_desktop">
+                    
                 </ul>
             </div>
         </section>
@@ -248,128 +191,8 @@
             <div class="container">
                 <h2 class="goods__title">Рекомендуем также</h2>
     
-                <ul class="goods__list">
-                    <li class="goods__item">
-                        <div class="label label__goods label_bottom-left">
-                            <p class="label__title label__title_goods">-50%</p>
-                        </div>
-                        <a href="#" class="goods__content">
-                            <picture class="goods__image-wrapper">
-                                <source srcset="img/product01_1024.avif" media="(max-width: 1200px)" type="image/avif">
-                                <source srcset="img/product01_1024.webp" media="(max-width: 1200px)" type="image/webp">
-                                <source srcset="img/product01_1024.jpg" media="(max-width: 1200px)">
-                                <source srcset="img/product01.avif" type="image/avif">
-                                <source srcset="img/product01.webp" type="image/webp">
-                                <img loading="lazy" src="img/product01.jpg" alt="Карточка товара футболки" class="goods__img" width="420" height="295">
-                            </picture>
-                            
-                            <div class="goods__prices">
-                                <p class="goods__price">1299 ₽</p>
-                                <p class="goods__price-old">2598 ₽</p>
-                            </div>
-                            <p class="goods__description">Пара футболок</p>
-                        </a>
-                    </li>
-                    <li class="goods__item">
-                        <div class="label label__goods label_bottom-left">
-                            <p class="label__title label__title_goods">-40%</p>
-                        </div>
-                        <a href="#" class="goods__content">
-                            <picture class="goods__image-wrapper">
-                                <source srcset="img/product02_1024.avif" media="(max-width: 1200px)" type="image/avif">
-                                <source srcset="img/product02_1024.webp" media="(max-width: 1200px)" type="image/webp">
-                                <source srcset="img/product02_1024.jpg" media="(max-width: 1200px)">
-                                <source srcset="img/product02.avif" type="image/avif">
-                                <source srcset="img/product02.webp" type="image/webp">
-                                <img loading="lazy" src="img/product02.jpg" alt="Карточка товара кроссовки" class="goods__img" width="420" height="295">
-                            </picture>
-                            <div class="goods__prices">
-                                <p class="goods__price">2099 ₽</p>
-                                <p class="goods__price-old">5938 ₽</p>
-                            </div>
-                            <p class="goods__description">Кроссовки</p>
-                        </a>
-                    </li>
-                    <li class="goods__item">
-                        <div class="label label__goods label_bottom-left">
-                            <p class="label__title label__title_goods">-10%</p>
-                        </div>
-                        <a href="#" class="goods__content">
-                            <picture class="goods__image-wrapper">
-                                <source srcset="img/product03_1024.avif" media="(max-width: 1200px)" type="image/avif">
-                                <source srcset="img/product03_1024.webp" media="(max-width: 1200px)" type="image/webp">
-                                <source srcset="img/product03_1024.jpg" media="(max-width: 1200px)">
-                                <source srcset="img/product03.avif" type="image/avif">
-                                <source srcset="img/product03.webp" type="image/webp">
-                                <img loading="lazy" src="img/product03.jpg" alt="Карточка товара Постельное белье" class="goods__img" width="420" height="295">
-                            </picture>
-                            <div class="goods__prices">
-                                <p class="goods__price">3902 ₽</p>
-                                <p class="goods__price-old">4490 ₽</p>
-                            </div>
-                            <p class="goods__description">Постельное белье</p>
-                        </a>
-                    </li>
-                    <li class="goods__item">
-                        <div class="label label__goods label_bottom-left">
-                            <p class="label__title label__title_goods">-30%</p>
-                        </div>
-                        <a href="#" class="goods__content">
-                            <picture class="goods__image-wrapper">
-                                <source srcset="img/product04_1024.avif" media="(max-width: 1200px)" type="image/avif">
-                                <source srcset="img/product04_1024.webp" media="(max-width: 1200px)" type="image/webp">
-                                <source srcset="img/product04_1024.jpg" media="(max-width: 1200px)">
-                                <source srcset="img/product04.avif" type="image/avif">
-                                <source srcset="img/product04.webp" type="image/webp">
-                                <img loading="lazy" src="img/product04.jpg" alt="Карточка товара Фен" class="goods__img" width="420" height="295">
-                            </picture>
-                            <div class="goods__prices">
-                                <p class="goods__price">2999 ₽</p>
-                                <p class="goods__price-old">6030 ₽</p>
-                            </div>
-                            <p class="goods__description">Фен</p>
-                        </a>
-                    </li>
-                    <li class="goods__item">
-                        <div class="label label__goods label_bottom-left">
-                            <p class="label__title label__title_goods">-10%</p>
-                        </div>
-                        <a href="#" class="goods__content">
-                            <picture class="goods__image-wrapper">
-                                <source srcset="img/product05_1024.avif" media="(max-width: 1200px)" type="image/avif">
-                                <source srcset="img/product05_1024.webp" media="(max-width: 1200px)" type="image/webp">
-                                <source srcset="img/product05_1024.jpg" media="(max-width: 1200px)">
-                                <source srcset="img/product05.avif" type="image/avif">
-                                <source srcset="img/product05.webp" type="image/webp">
-                                <img loading="lazy" src="img/product05.jpg" alt="Карточка товара Постельное белье" class="goods__img" width="420" height="295">
-                            </picture>
-                            <div class="goods__prices">
-                                <p class="goods__price">3902 ₽</p>
-                                <p class="goods__price-old">4490 ₽</p>
-                            </div>
-                            <p class="goods__description">Постельное белье</p>
-                        </a>
-                    </li>
-                    <li class="goods__item">
-                        <div class="label label__goods label_bottom-left">
-                            <p class="label__title label__title_goods">-30%</p>
-                        </div>
-                        <a href="#" class="goods__content">
-                            <picture class="goods__image-wrapper">
-                                <source srcset="img/product06_1024.avif" media="(max-width: 1200px)" type="image/avif">
-                                <source srcset="img/product06_1024.webp" media="(max-width: 1200px)" type="image/webp">
-                                <source srcset="img/product06_1024.jpg" media="(max-width: 1200px)">
-                                <source srcset="img/product06.avif" type="image/avif">
-                                <source srcset="img/product06.webp" type="image/webp">
-                                <img loading="lazy" src="img/product06.jpg" alt="Карточка товара Фен" class="goods__img" width="420" height="295">
-                            </picture>
-                            <div class="goods__prices">
-                                <p class="goods__price">2999 ₽</p>
-                                <p class="goods__price-old">6030 ₽</p>
-                            </div>
-                            <p class="goods__description">Фен</p>
-                        </a>
-                    </li>
+                <ul class="goods__list goods__list_desktop-min">
+                    
                 </ul>
             </div>
         </section>
@@ -383,36 +206,7 @@
                 <h3 class="footer__title footer__title_catalog">Каталог</h3>
 
                 <ul class="footer__list footer__list_catalog">
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Смартфоны</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Ноутбуки</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Ювелирные изделия</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Одежда</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Бытовая техника</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Бытовая химия</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Книги и журналы</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Домашний текстиль</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Электроника</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Косметика</a>
-                    </li>
+                    
                 </ul>
 
                 <h3 class="footer__title footer__title_users">Покупателям</h3>

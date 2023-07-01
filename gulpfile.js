@@ -27,7 +27,9 @@ const allJS = [
     'src/js/timer.js',
     'src/js/blog.js',
     'src/js/menu.js',
-    'src/js/renderCategoryGoods.js',
+    'src/js/renderCategory.js',
+    'src/js/renderCardPage.js',
+    'src/js/renderDiscontGoods.js',
 ];
 
 // tasks

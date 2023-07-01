@@ -30,7 +30,7 @@ const createFooterNavItem = (category) => {
     li.classList.add('footer__item');
     const link = document.createElement('a');
     link.classList.add('footer__link');
-    link.href = 'categories.html';
+    link.href = `categories.html?category=${category}`;
     link.textContent = `${category}`;
 
     li.append(link);

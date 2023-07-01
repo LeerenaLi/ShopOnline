@@ -55,6 +55,9 @@
         @include tablet {
             max-width: 220px;
         }
+        @include mobile {
+            max-width: 130px;
+        }
     }
     &__img {
         border-radius: 14px;
@@ -64,6 +67,43 @@
         }
         @include mobile {
             margin-bottom: 8px;
+        }
+    }
+    &__image-wrapper_category {
+        // max-width: 420px;
+        height: 295px;
+        margin-bottom: 20px;
+        border-radius: 14px;
+        border: 1px solid $color-bg-input;
+        // display: flex;
+        // align-items: center;
+        @include desktop-min {
+            // max-width: 300px;
+            margin-bottom: 15px;
+            height: 216px;
+        }
+        @include tablet-min {
+            // max-width: 220px;
+            height: 160px;
+        }
+        @include mobile {
+            // max-width: 130px;
+            margin-bottom: 8px;
+            height: 130px;
+        }
+    }
+    &__img_category {
+        border-radius: 14px;
+        height: 295px;
+        object-fit: contain;
+        @include desktop-min {
+            height: 216px;
+        }
+        @include tablet-min {
+            height: 160px;
+        }
+        @include mobile {
+           height: 130px;
         }
     }
     &__prices {

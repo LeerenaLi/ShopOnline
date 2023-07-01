@@ -3,6 +3,7 @@
     padding-top: 22px;
     display: none;
     &__wrapper {
+        padding-bottom: 20px;
         display: grid;
         gap: 40px 220px;
         grid-template-columns: 535px max-content max-content;

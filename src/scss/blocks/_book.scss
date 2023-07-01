@@ -110,6 +110,9 @@
         color: $color-blue;
         background-color: transparent;
         border: none;
+        &:hover {
+            color: #5D92E0;
+        }
         &:active {
             color: $color-red;
         }

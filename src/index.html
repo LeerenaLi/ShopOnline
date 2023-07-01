@@ -57,11 +57,12 @@
                             </a>
                         </li>
                         <li class="icons__item">
-                            <a href="#" class="icons__link" aria-label="Корзина">
+                            <a href="cart.html" class="icons__link" aria-label="Корзина">
                                 <div class="icons__img icons__img_count">
                                     <svg width="36" height="36" viewbox="0 0 36 36" fill="#2D2D2D" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10.5 27C8.85 27 7.515 28.35 7.515 30C7.515 31.65 8.85 33 10.5 33C12.15 33 13.5 31.65 13.5 30C13.5 28.35 12.15 27 10.5 27ZM1.5 3V6H4.5L9.9 17.385L7.875 21.06C7.635 21.48 7.5 21.975 7.5 22.5C7.5 24.15 8.85 25.5 10.5 25.5H28.5V22.5H11.13C10.92 22.5 10.755 22.335 10.755 22.125L10.8 21.945L12.15 19.5H23.325C24.45 19.5 25.44 18.885 25.95 17.955L31.32 8.22C31.44 8.01 31.5 7.755 31.5 7.5C31.5 6.675 30.825 6 30 6H7.815L6.405 3H1.5ZM25.5 27C23.85 27 22.515 28.35 22.515 30C22.515 31.65 23.85 33 25.5 33C27.15 33 28.5 31.65 28.5 30C28.5 28.35 27.15 27 25.5 27Z" />
                                     </svg>
+                                    <span class="icons__header-count">2</span>
                                 </div>
                                 <p class="icons__text">Корзина</p>
                             </a>
@@ -191,12 +192,12 @@
             </div>
         </section>
 
-        <section class="goods">
+        <section class="goods goods__discount">
             <div class="container">
                 <h2 class="goods__title">Это выгодно!</h2>
 
-                <ul class="goods__list">
-                    <li class="goods__item">
+                <ul class="goods__list goods__list_discount">
+                    <!-- <li class="goods__item">
                         <div class="label label__goods label_bottom-left">
                             <p class="label__title label__title_goods">-50%</p>
                         </div>
@@ -216,147 +217,8 @@
                             </div>
                             <p class="goods__description">Пара футболок</p>
                         </a>
-                    </li>
-                    <li class="goods__item">
-                        <div class="label label__goods label_bottom-left">
-                            <p class="label__title label__title_goods">-40%</p>
-                        </div>
-                        <a href="#" class="goods__content">
-                            <picture class="goods__image-wrapper">
-                                <source srcset="img/product02_1024.avif" media="(max-width: 1200px)" type="image/avif">
-                                <source srcset="img/product02_1024.webp" media="(max-width: 1200px)" type="image/webp">
-                                <source srcset="img/product02_1024.jpg" media="(max-width: 1200px)">
-                                <source srcset="img/product02.avif" type="image/avif">
-                                <source srcset="img/product02.webp" type="image/webp">
-                                <img loading="lazy" src="img/product02.jpg" alt="Карточка товара кроссовки" class="goods__img" width="420" height="295">
-                            </picture>
-                            <div class="goods__prices">
-                                <p class="goods__price">2099 ₽</p>
-                                <p class="goods__price-old">5938 ₽</p>
-                            </div>
-                            <p class="goods__description">Кроссовки</p>
-                        </a>
-                    </li>
-                    <li class="goods__item">
-                        <div class="label label__goods label_bottom-left">
-                            <p class="label__title label__title_goods">-10%</p>
-                        </div>
-                        <a href="#" class="goods__content">
-                            <picture class="goods__image-wrapper">
-                                <source srcset="img/product03_1024.avif" media="(max-width: 1200px)" type="image/avif">
-                                <source srcset="img/product03_1024.webp" media="(max-width: 1200px)" type="image/webp">
-                                <source srcset="img/product03_1024.jpg" media="(max-width: 1200px)">
-                                <source srcset="img/product03.avif" type="image/avif">
-                                <source srcset="img/product03.webp" type="image/webp">
-                                <img loading="lazy" src="img/product03.jpg" alt="Карточка товара Постельное белье" class="goods__img" width="420" height="295">
-                            </picture>
-                            <div class="goods__prices">
-                                <p class="goods__price">3902 ₽</p>
-                                <p class="goods__price-old">4490 ₽</p>
-                            </div>
-                            <p class="goods__description">Постельное белье</p>
-                        </a>
-                    </li>
-                    <li class="goods__item">
-                        <div class="label label__goods label_bottom-left">
-                            <p class="label__title label__title_goods">-30%</p>
-                        </div>
-                        <a href="#" class="goods__content">
-                            <picture class="goods__image-wrapper">
-                                <source srcset="img/product04_1024.avif" media="(max-width: 1200px)" type="image/avif">
-                                <source srcset="img/product04_1024.webp" media="(max-width: 1200px)" type="image/webp">
-                                <source srcset="img/product04_1024.jpg" media="(max-width: 1200px)">
-                                <source srcset="img/product04.avif" type="image/avif">
-                                <source srcset="img/product04.webp" type="image/webp">
-                                <img loading="lazy" src="img/product04.jpg" alt="Карточка товара Фен" class="goods__img" width="420" height="295">
-                            </picture>
-                            <div class="goods__prices">
-                                <p class="goods__price">2999 ₽</p>
-                                <p class="goods__price-old">6030 ₽</p>
-                            </div>
-                            <p class="goods__description">Фен</p>
-                        </a>
-                    </li>
-                    <li class="goods__item">
-                        <div class="label label__goods label_bottom-left">
-                            <p class="label__title label__title_goods">-10%</p>
-                        </div>
-                        <a href="#" class="goods__content">
-                            <picture class="goods__image-wrapper">
-                                <source srcset="img/product05_1024.avif" media="(max-width: 1200px)" type="image/avif">
-                                <source srcset="img/product05_1024.webp" media="(max-width: 1200px)" type="image/webp">
-                                <source srcset="img/product05_1024.jpg" media="(max-width: 1200px)">
-                                <source srcset="img/product05.avif" type="image/avif">
-                                <source srcset="img/product05.webp" type="image/webp">
-                                <img loading="lazy" src="img/product05.jpg" alt="Карточка товара Постельное белье" class="goods__img" width="420" height="295">
-                            </picture>
-                            <div class="goods__prices">
-                                <p class="goods__price">3902 ₽</p>
-                                <p class="goods__price-old">4490 ₽</p>
-                            </div>
-                            <p class="goods__description">Постельное белье</p>
-                        </a>
-                    </li>
-                    <li class="goods__item">
-                        <div class="label label__goods label_bottom-left">
-                            <p class="label__title label__title_goods">-30%</p>
-                        </div>
-                        <a href="#" class="goods__content">
-                            <picture class="goods__image-wrapper">
-                                <source srcset="img/product06_1024.avif" media="(max-width: 1200px)" type="image/avif">
-                                <source srcset="img/product06_1024.webp" media="(max-width: 1200px)" type="image/webp">
-                                <source srcset="img/product06_1024.jpg" media="(max-width: 1200px)">
-                                <source srcset="img/product06.avif" type="image/avif">
-                                <source srcset="img/product06.webp" type="image/webp">
-                                <img loading="lazy" src="img/product06.jpg" alt="Карточка товара Фен" class="goods__img" width="420" height="295">
-                            </picture>
-                            <div class="goods__prices">
-                                <p class="goods__price">2999 ₽</p>
-                                <p class="goods__price-old">6030 ₽</p>
-                            </div>
-                            <p class="goods__description">Фен</p>
-                        </a>
-                    </li>
-                    <li class="goods__item">
-                        <div class="label label__goods label_bottom-left">
-                            <p class="label__title label__title_goods">-30%</p>
-                        </div>
-                        <a href="#" class="goods__content">
-                            <picture class="goods__image-wrapper">
-                                <source srcset="img/product07_1024.avif" media="(max-width: 1200px)" type="image/avif">
-                                <source srcset="img/product07_1024.webp" media="(max-width: 1200px)" type="image/webp">
-                                <source srcset="img/product07_1024.jpg" media="(max-width: 1200px)">
-                                <source srcset="img/product07.avif" type="image/avif">
-                                <source srcset="img/product07.webp" type="image/webp">
-                                <img loading="lazy" src="img/product07.jpg" alt="Карточка товара Варежки-мишки" class="goods__img" width="420" height="295">
-                            </picture>
-                            <div class="goods__prices">
-                                <p class="goods__price">540 ₽</p>
-                                <p class="goods__price-old">890 ₽</p>
-                            </div>
-                            <p class="goods__description">Варежки-мишки</p>
-                        </a>
-                    </li>
-                    <li class="goods__item">
-                        <div class="label label__goods label_bottom-left">
-                            <p class="label__title label__title_goods">-50%</p>
-                        </div>
-                        <a href="#" class="goods__content">
-                            <picture class="goods__image-wrapper">
-                                <source srcset="img/product08_1024.avif" media="(max-width: 1200px)" type="image/avif">
-                                <source srcset="img/product08_1024.webp" media="(max-width: 1200px)" type="image/webp">
-                                <source srcset="img/product08_1024.jpg" media="(max-width: 1200px)">
-                                <source srcset="img/product08.avif" type="image/avif">
-                                <source srcset="img/product08.webp" type="image/webp">
-                                <img loading="lazy" src="img/product08.jpg" alt="Карточка товара Пара футболок" class="goods__img" width="420" height="295">
-                            </picture>
-                            <div class="goods__prices">
-                                <p class="goods__price">1299 ₽</p>
-                                <p class="goods__price-old">2598 ₽</p>
-                            </div>
-                            <p class="goods__description">Пара футболок</p>
-                        </a>
-                    </li>
+                    </li> -->
+                    
                 </ul>
             </div>
         </section>
@@ -371,36 +233,7 @@
                 <h3 class="footer__title footer__title_catalog">Каталог</h3>
 
                 <ul class="footer__list footer__list_catalog">
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Смартфоны</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Ноутбуки</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Ювелирные изделия</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Одежда</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Бытовая техника</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Бытовая химия</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Книги и журналы</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Домашний текстиль</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Электроника</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Косметика</a>
-                    </li>
+                    
                 </ul>
 
                 <h3 class="footer__title footer__title_users footer__title_users-active">Покупателям</h3>
