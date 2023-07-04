@@ -30,6 +30,8 @@ const allJS = [
     'src/js/renderCategory.js',
     'src/js/renderCardPage.js',
     'src/js/renderDiscontGoods.js',
+    'src/js/serviseStorage.js',
+    'src/js/renderCart.js',
 ];
 
 // tasks
