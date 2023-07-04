@@ -1,63 +1,73 @@
 import {getProduct} from './renderCardPage.js';
-import {addProductData, getStorage, removeStorage} from './serviseStorage.js';
+import {getStorage, removeStorage} from './serviseStorage.js';
 
 const cartList = document.querySelector('.cart__list');
 const cart = document.querySelector('.cart');
 const selectAll = document.querySelector('#select-all');
 const checkboxes = document.getElementsByName('prod');
+const inputs = document.getElementsByName('count');
+
 const headerCount = document.querySelector('.icons__header-count');
 const cartCount = document.querySelector('.cart__title-count');
 
 const totalPriceControl = () => {
     const data = getStorage('dataArr');
-    console.log('data: ', data);
-    const cartCount = document.querySelector('.cart__title-count');
     const resultGoodsCount = document.querySelector('.result__goods-count');
     const resultGoodsPrice = document.querySelector('.result__goods-price');
     const resultSale = document.querySelector('.result__sale-total');
     const resultTotal = document.querySelector('.result__total');
-    const count = +cartCount.textContent;
-    resultGoodsCount.textContent = `Товары, ${count}  шт.`;
 
     let sum = 0;
     let sumSale = 0;
-    for (let i = 0; i < data.length; i++) {
-        sum += +data[i].price;
-        resultGoodsPrice.textContent = `${sum} ₽`;
+    let count = 0;
 
-        sumSale += (+data[i].price / 100) * +data[i].discount;
-        resultSale.textContent = `${sumSale} ₽`;
+    if (inputs.length === data.length) {
+        for (let i = 0; i < data.length; i++) {
+            count += +inputs[i].value;
+            resultGoodsCount.textContent = `Товары, ${count}  шт.`;
+            cartCount.textContent = count;
+            headerCount.textContent = count;
 
-        resultTotal.textContent = sum - sumSale;
+            sum += +data[i].price * inputs[i].value;
+            console.log('sum: ', sum);
+            resultGoodsPrice.textContent = `${sum} ₽`;
+
+            sumSale += ((+data[i].price / 100) * +data[i].discount) * inputs[i].value;
+            console.log('sumSale: ', sumSale);
+            resultSale.textContent = `${sumSale} ₽`;
+
+            resultTotal.textContent = sum - sumSale;
+        }
     }
 };
 
-const countControl = async (minus, number, plus, priceAct, priceOld, priceCredit, id) => {
-    const dataProduct = await getProduct(id);
+const countControl = async (minus, number, plus, input, priceAct, priceOld, priceCredit, id) => {
     let n = +number.textContent;
-    let act = +priceAct.textContent;
-    let old = +priceOld.textContent;
+    const act = +priceAct.textContent;
+    const old = +priceOld.textContent;
+
+    plus.addEventListener('click', () => {
+        n += 1;
+        number.textContent = n;
+        input.value = n;
+        priceAct.textContent = act * n;
+        priceOld.textContent = old > 0 ? old * n : '';
+        priceCredit.textContent = `В кредит от ${Math.floor(+priceAct.textContent / 12)} ₽`;
+
+        totalPriceControl();
+    });
 
     minus.addEventListener('click', () => {
         if (n > 1) {
             n -= 1;
             number.textContent = n;
+            input.value = n;
             priceAct.textContent = act * n;
             priceOld.textContent = old > 0 ? old * n : '';
             priceCredit.textContent = `В кредит от ${Math.floor(+priceAct.textContent / 12)} ₽`;
-            removeStorage(id);
+
             totalPriceControl();
         }
-    });
-
-    plus.addEventListener('click', () => {
-        n += 1;
-        number.textContent = n;
-        priceAct.textContent = act * n;
-        priceOld.textContent = old > 0 ? old * n : '';
-        priceCredit.textContent = `В кредит от ${Math.floor(+priceAct.textContent / 12)} ₽`;
-        addProductData(dataProduct);
-        totalPriceControl();
     });
 };
 
@@ -74,9 +84,15 @@ const renderCount = (priceAct, priceOld, priceCredit, id) => {
     plus.classList.add('count__item', 'count__plus');
     plus.textContent = '+';
 
-    itemCount.append(minus, number, plus);
+    const input = document.createElement('input');
+    input.classList.add('count__input');
+    input.type = 'hidden';
+    input.name = 'count';
+    input.value = +number.textContent;
 
-    countControl(minus, number, plus, priceAct, priceOld, priceCredit, id);
+    itemCount.append(minus, number, plus, input);
+
+    countControl(minus, number, plus, input, priceAct, priceOld, priceCredit, id);
 
     return itemCount;
 };
