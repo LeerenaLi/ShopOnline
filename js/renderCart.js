@@ -1,4 +1,3 @@
-import {getProduct} from './renderCardPage.js';
 import {getStorage, removeStorage} from './serviseStorage.js';
 
 const cartList = document.querySelector('.cart__list');
@@ -29,11 +28,9 @@ const totalPriceControl = () => {
             headerCount.textContent = count;
 
             sum += +data[i].price * inputs[i].value;
-            console.log('sum: ', sum);
             resultGoodsPrice.textContent = `${sum} ₽`;
 
             sumSale += ((+data[i].price / 100) * +data[i].discount) * inputs[i].value;
-            console.log('sumSale: ', sumSale);
             resultSale.textContent = `${sumSale} ₽`;
 
             resultTotal.textContent = sum - sumSale;
@@ -41,7 +38,7 @@ const totalPriceControl = () => {
     }
 };
 
-const countControl = async (minus, number, plus, input, priceAct, priceOld, priceCredit, id) => {
+const countControl = async (minus, number, plus, input, priceAct, priceOld, priceCredit) => {
     let n = +number.textContent;
     const act = +priceAct.textContent;
     const old = +priceOld.textContent;
@@ -92,7 +89,7 @@ const renderCount = (priceAct, priceOld, priceCredit, id) => {
 
     itemCount.append(minus, number, plus, input);
 
-    countControl(minus, number, plus, input, priceAct, priceOld, priceCredit, id);
+    countControl(minus, number, plus, input, priceAct, priceOld, priceCredit);
 
     return itemCount;
 };

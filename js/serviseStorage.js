@@ -11,7 +11,6 @@ export const addProductData = (product) => {
     const dataArr = getStorage('dataArr');
     dataArr.push(product);
     setStorage(dataArr);
-    console.log('dataArr: ', dataArr);
     headerCount.textContent = dataArr.length;
 };
 
@@ -19,14 +18,7 @@ export const removeStorage = (id) => {
     const dataArr = getStorage('dataArr');
     const newArr = dataArr.filter(item => item.id !== id);
     setStorage(newArr);
-    console.log('newArr: ', newArr);
     headerCount.textContent = newArr.length;
     cartCount.textContent = headerCount.textContent;
 };
 
-// export default {
-//     getStorage,
-//     setStorage,
-//     addProductData,
-//     removeStorage,
-// };

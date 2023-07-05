@@ -95,7 +95,6 @@ const addRecommendGoods = async () => {
     // рекомендованные товары
     if (goodsList || goodsListMin) {
         const data = await getAllGoods(); // временно все товары, сделать по категориям
-        // console.log('data: ', data);
 
         data.map((item, index) => {
             const title = item.title;
@@ -120,7 +119,6 @@ const addRecommendGoods = async () => {
 };
 
 const addBtnControl = (addCartBtn, dataProduct) => {
-    console.log('dataProduct: ', dataProduct);
     addCartBtn.addEventListener('click', () => {
         addProductData(dataProduct);
     });
@@ -160,7 +158,5 @@ export const cardPageControl = async () => {
     addRecommendGoods();
 
     addBtnControl(addCartBtn, dataProduct);
-
-    // return {addCartBtn, favoriteBtn};
 };
 

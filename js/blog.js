@@ -64,7 +64,6 @@ const renderPagination = (page, pages, count) => {
 
     const isNotStart = page - Math.floor(count / 2) > 1;
     const isEnd = page + Math.floor(count / 2) >= pages;
-    console.log('page: ', page);
 
     if (count > pages) {
         count = pages;
@@ -128,7 +127,6 @@ const renderPagination = (page, pages, count) => {
 };
 
 const getAutor = async (userID) => {
-    // console.log('userID: ', userID);
     const result = await fetch(`https://gorest.co.in/public-api/users/${userID}`);
 
     const response = await result.json();
@@ -287,7 +285,6 @@ const renderPages = async () => {
         dataPage.forEach(article => {
             const id = article.id;
             const autorId = article.user_id;
-            // console.log('autorId: ', autorId);
             if (blogList) {
                 createTemplate(article, id, autorId);
             }
@@ -309,5 +306,4 @@ export const initBlog = () => {
         renderArticlePage();
     }
 };
-// initBlog();
 

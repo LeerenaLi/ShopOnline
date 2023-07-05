@@ -31,7 +31,6 @@ const timer = (deadline, timerBlock) => {
     const getTimeRemaining = () => {
         const dateStop =
             new Date(new Date(deadline).getTime() + 3 * 3600 * 1000); // +3 часа
-        // console.log('dateStop: ', dateStop);
 
         const dateNow = Date.now();
 
