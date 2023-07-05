@@ -31,7 +31,6 @@ const cartCount = document.querySelector('.cart__title-count');
         }
         if (cartTitle) {
             cartControl();
-            // selectControl();
         }
         initBlog();
     };
